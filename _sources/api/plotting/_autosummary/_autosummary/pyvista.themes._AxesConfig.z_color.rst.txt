@@ -1,0 +1,6 @@
+z\_color
+========
+
+.. currentmodule:: pyvista.themes
+
+.. autoproperty:: _AxesConfig.z_color

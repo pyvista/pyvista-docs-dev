@@ -1,0 +1,6 @@
+add\_checkbox\_button\_widget
+=============================
+
+.. currentmodule:: pyvista
+
+.. automethod:: WidgetHelper.add_checkbox_button_widget

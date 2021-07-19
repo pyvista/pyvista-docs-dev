@@ -1,0 +1,6 @@
+disable\_anti\_aliasing
+=======================
+
+.. currentmodule:: pyvista
+
+.. automethod:: Plotter.disable_anti_aliasing

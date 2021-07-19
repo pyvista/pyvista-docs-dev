@@ -1,0 +1,6 @@
+﻿vector\_poly\_data
+==================
+
+.. currentmodule:: pyvista
+
+.. autofunction:: vector_poly_data

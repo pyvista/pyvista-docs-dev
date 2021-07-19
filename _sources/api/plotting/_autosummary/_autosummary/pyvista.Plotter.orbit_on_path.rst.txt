@@ -1,0 +1,6 @@
+orbit\_on\_path
+===============
+
+.. currentmodule:: pyvista
+
+.. automethod:: Plotter.orbit_on_path

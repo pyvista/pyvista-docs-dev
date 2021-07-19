@@ -1,0 +1,6 @@
+volume\_mapper
+==============
+
+.. currentmodule:: pyvista.themes
+
+.. autoproperty:: ParaViewTheme.volume_mapper

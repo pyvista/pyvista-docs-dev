@@ -1,0 +1,6 @@
+enable\_point\_picking
+======================
+
+.. currentmodule:: pyvista
+
+.. automethod:: Plotter.enable_point_picking

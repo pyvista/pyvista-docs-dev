@@ -1,0 +1,6 @@
+pick\_click\_position
+=====================
+
+.. currentmodule:: pyvista
+
+.. automethod:: Plotter.pick_click_position

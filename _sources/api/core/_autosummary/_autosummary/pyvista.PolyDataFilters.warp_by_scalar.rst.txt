@@ -1,0 +1,6 @@
+warp\_by\_scalar
+================
+
+.. currentmodule:: pyvista
+
+.. automethod:: PolyDataFilters.warp_by_scalar

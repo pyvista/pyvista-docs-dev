@@ -1,0 +1,298 @@
+﻿pyvista.PolyDataFilters
+=======================
+
+.. currentmodule:: pyvista
+
+.. autoclass:: PolyDataFilters
+
+   
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :toctree: _autosummary
+   
+      
+      
+      PolyDataFilters.boolean_add
+      
+      
+      PolyDataFilters.boolean_cut
+      
+      
+      PolyDataFilters.boolean_difference
+      
+      
+      PolyDataFilters.boolean_intersection
+      
+      
+      PolyDataFilters.boolean_union
+      
+      
+      PolyDataFilters.cell_centers
+      
+      
+      PolyDataFilters.cell_data_to_point_data
+      
+      
+      PolyDataFilters.clean
+      
+      
+      PolyDataFilters.clip
+      
+      
+      PolyDataFilters.clip_box
+      
+      
+      PolyDataFilters.clip_closed_surface
+      
+      
+      PolyDataFilters.clip_scalar
+      
+      
+      PolyDataFilters.clip_surface
+      
+      
+      PolyDataFilters.compute_arc_length
+      
+      
+      PolyDataFilters.compute_cell_quality
+      
+      
+      PolyDataFilters.compute_cell_sizes
+      
+      
+      PolyDataFilters.compute_derivative
+      
+      
+      PolyDataFilters.compute_implicit_distance
+      
+      
+      PolyDataFilters.compute_normals
+      
+      
+      PolyDataFilters.connectivity
+      
+      
+      PolyDataFilters.contour
+      
+      
+      PolyDataFilters.ctp
+      
+      
+      PolyDataFilters.curvature
+      
+      
+      PolyDataFilters.decimate
+      
+      
+      PolyDataFilters.decimate_boundary
+      
+      
+      PolyDataFilters.decimate_pro
+      
+      
+      PolyDataFilters.delaunay_2d
+      
+      
+      PolyDataFilters.delaunay_3d
+      
+      
+      PolyDataFilters.edge_mask
+      
+      
+      PolyDataFilters.elevation
+      
+      
+      PolyDataFilters.extract_all_edges
+      
+      
+      PolyDataFilters.extract_cells
+      
+      
+      PolyDataFilters.extract_feature_edges
+      
+      
+      PolyDataFilters.extract_geometry
+      
+      
+      PolyDataFilters.extract_largest
+      
+      
+      PolyDataFilters.extract_points
+      
+      
+      PolyDataFilters.extract_surface
+      
+      
+      PolyDataFilters.extrude
+      
+      
+      PolyDataFilters.extrude_rotate
+      
+      
+      PolyDataFilters.fill_holes
+      
+      
+      PolyDataFilters.flip_normals
+      
+      
+      PolyDataFilters.geodesic
+      
+      
+      PolyDataFilters.geodesic_distance
+      
+      
+      PolyDataFilters.glyph
+      
+      
+      PolyDataFilters.interpolate
+      
+      
+      PolyDataFilters.intersection
+      
+      
+      PolyDataFilters.merge
+      
+      
+      PolyDataFilters.multi_ray_trace
+      
+      
+      PolyDataFilters.outline
+      
+      
+      PolyDataFilters.outline_corners
+      
+      
+      PolyDataFilters.plot_boundaries
+      
+      
+      PolyDataFilters.plot_curvature
+      
+      
+      PolyDataFilters.plot_normals
+      
+      
+      PolyDataFilters.plot_over_circular_arc
+      
+      
+      PolyDataFilters.plot_over_circular_arc_normal
+      
+      
+      PolyDataFilters.plot_over_line
+      
+      
+      PolyDataFilters.point_data_to_cell_data
+      
+      
+      PolyDataFilters.probe
+      
+      
+      PolyDataFilters.project_points_to_plane
+      
+      
+      PolyDataFilters.ptc
+      
+      
+      PolyDataFilters.ray_trace
+      
+      
+      PolyDataFilters.reflect
+      
+      
+      PolyDataFilters.remove_points
+      
+      
+      PolyDataFilters.ribbon
+      
+      
+      PolyDataFilters.sample
+      
+      
+      PolyDataFilters.sample_over_circular_arc
+      
+      
+      PolyDataFilters.sample_over_circular_arc_normal
+      
+      
+      PolyDataFilters.sample_over_line
+      
+      
+      PolyDataFilters.select_enclosed_points
+      
+      
+      PolyDataFilters.shrink
+      
+      
+      PolyDataFilters.slice
+      
+      
+      PolyDataFilters.slice_along_axis
+      
+      
+      PolyDataFilters.slice_along_line
+      
+      
+      PolyDataFilters.slice_orthogonal
+      
+      
+      PolyDataFilters.smooth
+      
+      
+      PolyDataFilters.split_bodies
+      
+      
+      PolyDataFilters.streamlines
+      
+      
+      PolyDataFilters.streamlines_evenly_spaced_2D
+      
+      
+      PolyDataFilters.streamlines_from_source
+      
+      
+      PolyDataFilters.strip
+      
+      
+      PolyDataFilters.subdivide
+      
+      
+      PolyDataFilters.subdivide_adaptive
+      
+      
+      PolyDataFilters.surface_indices
+      
+      
+      PolyDataFilters.texture_map_to_plane
+      
+      
+      PolyDataFilters.texture_map_to_sphere
+      
+      
+      PolyDataFilters.threshold
+      
+      
+      PolyDataFilters.threshold_percent
+      
+      
+      PolyDataFilters.transform
+      
+      
+      PolyDataFilters.triangulate
+      
+      
+      PolyDataFilters.tube
+      
+      
+      PolyDataFilters.warp_by_scalar
+      
+      
+      PolyDataFilters.warp_by_vector
+      
+   
+   
+
+   
+   
+   

@@ -1,0 +1,6 @@
+font
+====
+
+.. currentmodule:: pyvista.themes
+
+.. autoproperty:: DocumentTheme.font

@@ -1,0 +1,1 @@
+grid.plot(scalars=d[:, 1], scalar_bar_args={'title': 'Y Displacement'}, cpos='zy', show_edges=True)

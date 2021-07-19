@@ -1,0 +1,6 @@
+import\_gltf
+============
+
+.. currentmodule:: pyvista
+
+.. automethod:: Plotter.import_gltf

@@ -1,0 +1,6 @@
+disable\_hidden\_line\_removal
+==============================
+
+.. currentmodule:: pyvista
+
+.. automethod:: Renderer.disable_hidden_line_removal

@@ -1,0 +1,6 @@
+add\_mesh\_clip\_plane
+======================
+
+.. currentmodule:: pyvista
+
+.. automethod:: WidgetHelper.add_mesh_clip_plane

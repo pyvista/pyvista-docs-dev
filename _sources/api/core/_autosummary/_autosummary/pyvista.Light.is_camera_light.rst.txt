@@ -1,0 +1,6 @@
+is\_camera\_light
+=================
+
+.. currentmodule:: pyvista
+
+.. autoproperty:: Light.is_camera_light

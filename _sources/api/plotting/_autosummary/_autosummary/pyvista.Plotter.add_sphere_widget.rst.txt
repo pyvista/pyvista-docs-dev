@@ -1,0 +1,6 @@
+add\_sphere\_widget
+===================
+
+.. currentmodule:: pyvista
+
+.. automethod:: Plotter.add_sphere_widget

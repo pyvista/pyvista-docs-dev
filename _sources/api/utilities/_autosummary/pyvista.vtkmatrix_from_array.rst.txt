@@ -1,0 +1,6 @@
+﻿vtkmatrix\_from\_array
+======================
+
+.. currentmodule:: pyvista
+
+.. autofunction:: vtkmatrix_from_array

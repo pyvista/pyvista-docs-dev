@@ -1,0 +1,6 @@
+clear\_box\_widgets
+===================
+
+.. currentmodule:: pyvista
+
+.. automethod:: Plotter.clear_box_widgets

@@ -1,0 +1,6 @@
+enable\_path\_picking
+=====================
+
+.. currentmodule:: pyvista
+
+.. automethod:: Plotter.enable_path_picking

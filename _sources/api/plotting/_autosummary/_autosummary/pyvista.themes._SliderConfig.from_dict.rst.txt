@@ -1,0 +1,6 @@
+from\_dict
+==========
+
+.. currentmodule:: pyvista.themes
+
+.. automethod:: _SliderConfig.from_dict

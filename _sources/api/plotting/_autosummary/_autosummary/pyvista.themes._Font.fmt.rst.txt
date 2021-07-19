@@ -1,0 +1,6 @@
+fmt
+===
+
+.. currentmodule:: pyvista.themes
+
+.. autoproperty:: _Font.fmt

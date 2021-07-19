@@ -1,0 +1,6 @@
+parallel\_scale
+===============
+
+.. currentmodule:: pyvista
+
+.. autoproperty:: Renderer.parallel_scale

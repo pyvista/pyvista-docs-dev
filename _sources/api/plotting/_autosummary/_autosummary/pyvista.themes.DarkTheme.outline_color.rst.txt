@@ -1,0 +1,6 @@
+outline\_color
+==============
+
+.. currentmodule:: pyvista.themes
+
+.. autoproperty:: DarkTheme.outline_color

@@ -1,0 +1,6 @@
+extract\_feature\_edges
+=======================
+
+.. currentmodule:: pyvista
+
+.. automethod:: UnstructuredGridFilters.extract_feature_edges

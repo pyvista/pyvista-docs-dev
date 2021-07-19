@@ -1,0 +1,6 @@
+enable\_rubber\_band\_style
+===========================
+
+.. currentmodule:: pyvista
+
+.. automethod:: Plotter.enable_rubber_band_style

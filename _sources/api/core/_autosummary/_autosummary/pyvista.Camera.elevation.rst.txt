@@ -1,0 +1,6 @@
+elevation
+=========
+
+.. currentmodule:: pyvista
+
+.. autoproperty:: Camera.elevation

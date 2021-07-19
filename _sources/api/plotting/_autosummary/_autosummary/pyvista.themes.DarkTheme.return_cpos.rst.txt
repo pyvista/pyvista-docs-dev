@@ -1,0 +1,6 @@
+return\_cpos
+============
+
+.. currentmodule:: pyvista.themes
+
+.. autoproperty:: DarkTheme.return_cpos

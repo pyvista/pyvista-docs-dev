@@ -1,0 +1,6 @@
+update\_scalar\_bar\_range
+==========================
+
+.. currentmodule:: pyvista
+
+.. automethod:: Plotter.update_scalar_bar_range

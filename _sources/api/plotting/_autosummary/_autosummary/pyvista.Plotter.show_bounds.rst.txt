@@ -1,0 +1,6 @@
+show\_bounds
+============
+
+.. currentmodule:: pyvista
+
+.. automethod:: Plotter.show_bounds

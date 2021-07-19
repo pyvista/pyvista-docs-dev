@@ -1,0 +1,6 @@
+occlusion\_ratio
+================
+
+.. currentmodule:: pyvista.themes
+
+.. autoproperty:: _DepthPeelingConfig.occlusion_ratio

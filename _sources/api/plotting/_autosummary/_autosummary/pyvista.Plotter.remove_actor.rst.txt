@@ -1,0 +1,6 @@
+remove\_actor
+=============
+
+.. currentmodule:: pyvista
+
+.. automethod:: Plotter.remove_actor

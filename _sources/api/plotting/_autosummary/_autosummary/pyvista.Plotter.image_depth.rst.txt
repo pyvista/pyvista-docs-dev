@@ -1,0 +1,6 @@
+image\_depth
+============
+
+.. currentmodule:: pyvista
+
+.. autoproperty:: Plotter.image_depth

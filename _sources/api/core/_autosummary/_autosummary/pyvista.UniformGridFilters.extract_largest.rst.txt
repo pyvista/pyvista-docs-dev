@@ -1,0 +1,6 @@
+extract\_largest
+================
+
+.. currentmodule:: pyvista
+
+.. automethod:: UniformGridFilters.extract_largest

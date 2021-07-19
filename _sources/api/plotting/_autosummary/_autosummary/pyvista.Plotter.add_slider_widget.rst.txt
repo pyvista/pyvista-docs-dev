@@ -1,0 +1,6 @@
+add\_slider\_widget
+===================
+
+.. currentmodule:: pyvista
+
+.. automethod:: Plotter.add_slider_widget

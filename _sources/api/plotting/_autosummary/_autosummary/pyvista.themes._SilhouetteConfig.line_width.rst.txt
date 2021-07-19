@@ -1,0 +1,6 @@
+line\_width
+===========
+
+.. currentmodule:: pyvista.themes
+
+.. autoproperty:: _SilhouetteConfig.line_width

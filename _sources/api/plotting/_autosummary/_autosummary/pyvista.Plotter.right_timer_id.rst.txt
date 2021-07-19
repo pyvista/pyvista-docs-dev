@@ -1,0 +1,6 @@
+right\_timer\_id
+================
+
+.. currentmodule:: pyvista
+
+.. autoattribute:: Plotter.right_timer_id

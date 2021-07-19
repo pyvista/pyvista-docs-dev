@@ -1,0 +1,6 @@
+notebook
+========
+
+.. currentmodule:: pyvista.themes
+
+.. autoproperty:: DarkTheme.notebook

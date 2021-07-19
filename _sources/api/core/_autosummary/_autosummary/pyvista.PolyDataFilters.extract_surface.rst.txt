@@ -1,0 +1,6 @@
+extract\_surface
+================
+
+.. currentmodule:: pyvista
+
+.. automethod:: PolyDataFilters.extract_surface

@@ -1,0 +1,6 @@
+add\_legend
+===========
+
+.. currentmodule:: pyvista
+
+.. automethod:: Plotter.add_legend

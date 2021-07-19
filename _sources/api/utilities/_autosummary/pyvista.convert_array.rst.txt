@@ -1,0 +1,6 @@
+﻿convert\_array
+==============
+
+.. currentmodule:: pyvista
+
+.. autofunction:: convert_array

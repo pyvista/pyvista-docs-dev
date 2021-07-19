@@ -1,0 +1,6 @@
+title
+=====
+
+.. currentmodule:: pyvista.themes
+
+.. autoproperty:: ParaViewTheme.title

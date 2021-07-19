@@ -1,0 +1,6 @@
+show\_scalar\_bar
+=================
+
+.. currentmodule:: pyvista.themes
+
+.. autoproperty:: DarkTheme.show_scalar_bar

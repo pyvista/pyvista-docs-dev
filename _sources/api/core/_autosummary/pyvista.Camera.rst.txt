@@ -1,0 +1,228 @@
+﻿pyvista.Camera
+==============
+
+.. currentmodule:: pyvista
+
+.. autoclass:: Camera
+
+   
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :toctree: _autosummary
+   
+      
+      
+      Camera.copy
+      
+      
+      Camera.disable_parallel_projection
+      
+      
+      Camera.enable_parallel_projection
+      
+      
+      Camera.reset_clipping_range
+      
+      
+      Camera.view_frustum
+      
+      
+      Camera.zoom
+      
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+      :toctree: _autosummary
+   
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      Camera.azimuth
+      
+      
+      Camera.clipping_range
+      
+      
+      Camera.direction
+      
+      
+      Camera.distance
+      
+      
+      Camera.elevation
+      
+      
+      Camera.focal_point
+      
+      
+      Camera.is_parallel_projection
+      
+      
+      Camera.model_transform_matrix
+      
+      
+      Camera.parallel_projection
+      
+      
+      Camera.parallel_scale
+      
+      
+      Camera.position
+      
+      
+      Camera.roll
+      
+      
+      Camera.thickness
+      
+      
+      Camera.up
+      
+      
+      Camera.view_angle
+      
+   
+   

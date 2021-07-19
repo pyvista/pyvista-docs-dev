@@ -1,0 +1,6 @@
+reset\_camera
+=============
+
+.. currentmodule:: pyvista
+
+.. automethod:: Renderer.reset_camera

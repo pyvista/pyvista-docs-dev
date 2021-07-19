@@ -1,0 +1,6 @@
+screenshot
+==========
+
+.. currentmodule:: pyvista
+
+.. automethod:: Plotter.screenshot

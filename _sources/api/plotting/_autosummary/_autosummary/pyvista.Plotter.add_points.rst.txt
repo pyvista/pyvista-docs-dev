@@ -1,0 +1,6 @@
+add\_points
+===========
+
+.. currentmodule:: pyvista
+
+.. automethod:: Plotter.add_points

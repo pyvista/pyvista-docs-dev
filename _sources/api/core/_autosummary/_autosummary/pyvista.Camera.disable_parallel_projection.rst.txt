@@ -1,0 +1,6 @@
+disable\_parallel\_projection
+=============================
+
+.. currentmodule:: pyvista
+
+.. automethod:: Camera.disable_parallel_projection

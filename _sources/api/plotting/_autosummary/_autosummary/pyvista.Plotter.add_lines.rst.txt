@@ -1,0 +1,6 @@
+add\_lines
+==========
+
+.. currentmodule:: pyvista
+
+.. automethod:: Plotter.add_lines

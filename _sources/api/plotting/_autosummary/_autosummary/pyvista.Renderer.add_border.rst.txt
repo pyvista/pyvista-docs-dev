@@ -1,0 +1,6 @@
+add\_border
+===========
+
+.. currentmodule:: pyvista
+
+.. automethod:: Renderer.add_border

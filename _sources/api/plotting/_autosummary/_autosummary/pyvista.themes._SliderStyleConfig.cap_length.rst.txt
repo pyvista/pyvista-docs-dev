@@ -1,0 +1,6 @@
+cap\_length
+===========
+
+.. currentmodule:: pyvista.themes
+
+.. autoproperty:: _SliderStyleConfig.cap_length

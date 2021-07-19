@@ -1,0 +1,6 @@
+geodesic\_distance
+==================
+
+.. currentmodule:: pyvista
+
+.. automethod:: PolyDataFilters.geodesic_distance

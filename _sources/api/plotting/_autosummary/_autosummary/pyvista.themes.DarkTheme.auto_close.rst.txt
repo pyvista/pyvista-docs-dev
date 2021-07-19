@@ -1,0 +1,6 @@
+auto\_close
+===========
+
+.. currentmodule:: pyvista.themes
+
+.. autoproperty:: DarkTheme.auto_close

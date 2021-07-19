@@ -1,0 +1,6 @@
+get\_pick\_position
+===================
+
+.. currentmodule:: pyvista
+
+.. automethod:: Plotter.get_pick_position

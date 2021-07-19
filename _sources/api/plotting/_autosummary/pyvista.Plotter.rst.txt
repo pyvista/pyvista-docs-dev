@@ -1,0 +1,559 @@
+﻿pyvista.Plotter
+===============
+
+.. currentmodule:: pyvista
+
+.. autoclass:: Plotter
+
+   
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :toctree: _autosummary
+   
+      
+      
+      Plotter.add_actor
+      
+      
+      Plotter.add_arrows
+      
+      
+      Plotter.add_axes
+      
+      
+      Plotter.add_axes_at_origin
+      
+      
+      Plotter.add_background_image
+      
+      
+      Plotter.add_bounding_box
+      
+      
+      Plotter.add_box_widget
+      
+      
+      Plotter.add_checkbox_button_widget
+      
+      
+      Plotter.add_floor
+      
+      
+      Plotter.add_key_event
+      
+      
+      Plotter.add_legend
+      
+      
+      Plotter.add_light
+      
+      
+      Plotter.add_line_widget
+      
+      
+      Plotter.add_lines
+      
+      
+      Plotter.add_mesh
+      
+      
+      Plotter.add_mesh_clip_box
+      
+      
+      Plotter.add_mesh_clip_plane
+      
+      
+      Plotter.add_mesh_isovalue
+      
+      
+      Plotter.add_mesh_slice
+      
+      
+      Plotter.add_mesh_slice_orthogonal
+      
+      
+      Plotter.add_mesh_slice_spline
+      
+      
+      Plotter.add_mesh_threshold
+      
+      
+      Plotter.add_orientation_widget
+      
+      
+      Plotter.add_plane_widget
+      
+      
+      Plotter.add_point_labels
+      
+      
+      Plotter.add_point_scalar_labels
+      
+      
+      Plotter.add_points
+      
+      
+      Plotter.add_scalar_bar
+      
+      
+      Plotter.add_slider_widget
+      
+      
+      Plotter.add_sphere_widget
+      
+      
+      Plotter.add_spline_widget
+      
+      
+      Plotter.add_text
+      
+      
+      Plotter.add_text_slider_widget
+      
+      
+      Plotter.add_title
+      
+      
+      Plotter.add_volume
+      
+      
+      Plotter.clear
+      
+      
+      Plotter.clear_box_widgets
+      
+      
+      Plotter.clear_button_widgets
+      
+      
+      Plotter.clear_events_for_key
+      
+      
+      Plotter.clear_line_widgets
+      
+      
+      Plotter.clear_plane_widgets
+      
+      
+      Plotter.clear_slider_widgets
+      
+      
+      Plotter.clear_sphere_widgets
+      
+      
+      Plotter.clear_spline_widgets
+      
+      
+      Plotter.close
+      
+      
+      Plotter.deep_clean
+      
+      
+      Plotter.disable
+      
+      
+      Plotter.disable_3_lights
+      
+      
+      Plotter.disable_anti_aliasing
+      
+      
+      Plotter.disable_depth_peeling
+      
+      
+      Plotter.disable_eye_dome_lighting
+      
+      
+      Plotter.disable_hidden_line_removal
+      
+      
+      Plotter.disable_parallel_projection
+      
+      
+      Plotter.disable_shadows
+      
+      
+      Plotter.enable
+      
+      
+      Plotter.enable_3_lights
+      
+      
+      Plotter.enable_anti_aliasing
+      
+      
+      Plotter.enable_cell_picking
+      
+      
+      Plotter.enable_depth_peeling
+      
+      
+      Plotter.enable_eye_dome_lighting
+      
+      
+      Plotter.enable_fly_to_right_click
+      
+      
+      Plotter.enable_geodesic_picking
+      
+      
+      Plotter.enable_hidden_line_removal
+      
+      
+      Plotter.enable_horizon_picking
+      
+      
+      Plotter.enable_image_style
+      
+      
+      Plotter.enable_joystick_actor_style
+      
+      
+      Plotter.enable_joystick_style
+      
+      
+      Plotter.enable_lightkit
+      
+      
+      Plotter.enable_parallel_projection
+      
+      
+      Plotter.enable_path_picking
+      
+      
+      Plotter.enable_point_picking
+      
+      
+      Plotter.enable_rubber_band_2d_style
+      
+      
+      Plotter.enable_rubber_band_style
+      
+      
+      Plotter.enable_shadows
+      
+      
+      Plotter.enable_terrain_style
+      
+      
+      Plotter.enable_trackball_actor_style
+      
+      
+      Plotter.enable_trackball_style
+      
+      
+      Plotter.enable_zoom_style
+      
+      
+      Plotter.export_gltf
+      
+      
+      Plotter.export_obj
+      
+      
+      Plotter.export_vtkjs
+      
+      
+      Plotter.fly_to
+      
+      
+      Plotter.fly_to_mouse_position
+      
+      
+      Plotter.generate_orbital_path
+      
+      
+      Plotter.get_default_cam_pos
+      
+      
+      Plotter.get_image_depth
+      
+      
+      Plotter.get_pick_position
+      
+      
+      Plotter.hide_axes
+      
+      
+      Plotter.hide_axes_all
+      
+      
+      Plotter.import_gltf
+      
+      
+      Plotter.increment_point_size_and_line_width
+      
+      
+      Plotter.isometric_view
+      
+      
+      Plotter.isometric_view_interactive
+      
+      
+      Plotter.key_press_event
+      
+      
+      Plotter.left_button_down
+      
+      
+      Plotter.link_views
+      
+      
+      Plotter.open_gif
+      
+      
+      Plotter.open_movie
+      
+      
+      Plotter.orbit_on_path
+      
+      
+      Plotter.pick_click_position
+      
+      
+      Plotter.pick_mouse_position
+      
+      
+      Plotter.remove_actor
+      
+      
+      Plotter.remove_all_lights
+      
+      
+      Plotter.remove_background_image
+      
+      
+      Plotter.remove_bounding_box
+      
+      
+      Plotter.remove_bounds_axes
+      
+      
+      Plotter.remove_floors
+      
+      
+      Plotter.remove_legend
+      
+      
+      Plotter.remove_scalar_bar
+      
+      
+      Plotter.render
+      
+      
+      Plotter.reset_camera
+      
+      
+      Plotter.reset_camera_clipping_range
+      
+      
+      Plotter.reset_key_events
+      
+      
+      Plotter.save_graphic
+      
+      
+      Plotter.screenshot
+      
+      
+      Plotter.set_background
+      
+      
+      Plotter.set_environment_texture
+      
+      
+      Plotter.set_focus
+      
+      
+      Plotter.set_position
+      
+      
+      Plotter.set_scale
+      
+      
+      Plotter.set_viewup
+      
+      
+      Plotter.show
+      
+      
+      Plotter.show_axes
+      
+      
+      Plotter.show_axes_all
+      
+      
+      Plotter.show_bounds
+      
+      
+      Plotter.show_grid
+      
+      
+      Plotter.store_click_position
+      
+      
+      Plotter.store_mouse_position
+      
+      
+      Plotter.subplot
+      
+      
+      Plotter.track_click_position
+      
+      
+      Plotter.track_mouse_position
+      
+      
+      Plotter.unlink_views
+      
+      
+      Plotter.untrack_click_position
+      
+      
+      Plotter.untrack_mouse_position
+      
+      
+      Plotter.update
+      
+      
+      Plotter.update_bounds_axes
+      
+      
+      Plotter.update_coordinates
+      
+      
+      Plotter.update_scalar_bar_range
+      
+      
+      Plotter.update_scalars
+      
+      
+      Plotter.view_isometric
+      
+      
+      Plotter.view_vector
+      
+      
+      Plotter.view_xy
+      
+      
+      Plotter.view_xz
+      
+      
+      Plotter.view_yx
+      
+      
+      Plotter.view_yz
+      
+      
+      Plotter.view_zx
+      
+      
+      Plotter.view_zy
+      
+      
+      Plotter.where_is
+      
+      
+      Plotter.write_frame
+      
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+      :toctree: _autosummary
+   
+      
+      Plotter.background_color
+      
+      
+      Plotter.bounds
+      
+      
+      Plotter.camera
+      
+      
+      Plotter.camera_position
+      
+      
+      Plotter.camera_set
+      
+      
+      Plotter.center
+      
+      
+      Plotter.click_position
+      
+      
+      Plotter.image
+      
+      
+      Plotter.image_depth
+      
+      
+      Plotter.last_update_time
+      
+      
+      Plotter.length
+      
+      
+      Plotter.mouse_position
+      
+      
+      Plotter.parallel_projection
+      
+      
+      Plotter.parallel_scale
+      
+      
+      Plotter.picked_cells
+      
+      
+      Plotter.picked_geodesic
+      
+      
+      Plotter.picked_horizon
+      
+      
+      Plotter.picked_path
+      
+      
+      Plotter.picked_point
+      
+      
+      Plotter.renderer
+      
+      
+      Plotter.right_timer_id
+      
+      
+      Plotter.scalar_bar
+      
+      
+      Plotter.scalar_bars
+      
+      
+      Plotter.scale
+      
+      
+      Plotter.shape
+      
+      
+      Plotter.store_image
+      
+      
+      Plotter.theme
+      
+      
+      Plotter.window_size
+      
+   
+   

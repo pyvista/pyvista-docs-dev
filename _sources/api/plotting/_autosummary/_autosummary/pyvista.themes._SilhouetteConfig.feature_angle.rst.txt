@@ -1,0 +1,6 @@
+feature\_angle
+==============
+
+.. currentmodule:: pyvista.themes
+
+.. autoproperty:: _SilhouetteConfig.feature_angle

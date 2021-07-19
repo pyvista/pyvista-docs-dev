@@ -1,0 +1,6 @@
+label\_size
+===========
+
+.. currentmodule:: pyvista.themes
+
+.. autoproperty:: _Font.label_size

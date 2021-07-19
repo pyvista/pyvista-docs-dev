@@ -1,0 +1,46 @@
+﻿pyvista.themes.\_ColorbarConfig
+===============================
+
+.. currentmodule:: pyvista.themes
+
+.. autoclass:: _ColorbarConfig
+
+   
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :toctree: _autosummary
+   
+      
+      
+      _ColorbarConfig.from_dict
+      
+      
+      _ColorbarConfig.to_dict
+      
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+      :toctree: _autosummary
+   
+      
+      _ColorbarConfig.height
+      
+      
+      _ColorbarConfig.position_x
+      
+      
+      _ColorbarConfig.position_y
+      
+      
+      _ColorbarConfig.width
+      
+   
+   

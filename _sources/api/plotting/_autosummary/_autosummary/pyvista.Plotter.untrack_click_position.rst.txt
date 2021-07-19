@@ -1,0 +1,6 @@
+untrack\_click\_position
+========================
+
+.. currentmodule:: pyvista
+
+.. automethod:: Plotter.untrack_click_position

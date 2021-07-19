@@ -1,0 +1,6 @@
+﻿fit\_plane\_to\_points
+======================
+
+.. currentmodule:: pyvista
+
+.. autofunction:: fit_plane_to_points

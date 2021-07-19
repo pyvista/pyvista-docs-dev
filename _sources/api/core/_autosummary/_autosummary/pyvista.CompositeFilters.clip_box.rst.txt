@@ -1,0 +1,6 @@
+clip\_box
+=========
+
+.. currentmodule:: pyvista
+
+.. automethod:: CompositeFilters.clip_box

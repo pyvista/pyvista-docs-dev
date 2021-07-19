@@ -1,0 +1,6 @@
+cap\_width
+==========
+
+.. currentmodule:: pyvista.themes
+
+.. autoproperty:: _SliderStyleConfig.cap_width

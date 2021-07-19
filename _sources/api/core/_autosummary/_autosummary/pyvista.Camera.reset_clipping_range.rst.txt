@@ -1,0 +1,6 @@
+reset\_clipping\_range
+======================
+
+.. currentmodule:: pyvista
+
+.. automethod:: Camera.reset_clipping_range

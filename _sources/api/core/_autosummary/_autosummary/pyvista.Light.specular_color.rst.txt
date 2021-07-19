@@ -1,0 +1,6 @@
+specular\_color
+===============
+
+.. currentmodule:: pyvista
+
+.. autoproperty:: Light.specular_color

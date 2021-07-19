@@ -1,0 +1,6 @@
+project\_points\_to\_plane
+==========================
+
+.. currentmodule:: pyvista
+
+.. automethod:: PolyDataFilters.project_points_to_plane

@@ -1,0 +1,6 @@
+hide\_axes\_all
+===============
+
+.. currentmodule:: pyvista
+
+.. automethod:: Plotter.hide_axes_all

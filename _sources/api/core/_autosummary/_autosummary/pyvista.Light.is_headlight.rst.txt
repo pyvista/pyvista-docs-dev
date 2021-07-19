@@ -1,0 +1,6 @@
+is\_headlight
+=============
+
+.. currentmodule:: pyvista
+
+.. autoproperty:: Light.is_headlight

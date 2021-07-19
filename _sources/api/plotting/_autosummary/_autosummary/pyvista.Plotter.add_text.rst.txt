@@ -1,0 +1,6 @@
+add\_text
+=========
+
+.. currentmodule:: pyvista
+
+.. automethod:: Plotter.add_text

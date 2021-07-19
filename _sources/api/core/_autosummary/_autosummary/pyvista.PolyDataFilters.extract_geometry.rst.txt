@@ -1,0 +1,6 @@
+extract\_geometry
+=================
+
+.. currentmodule:: pyvista
+
+.. automethod:: PolyDataFilters.extract_geometry

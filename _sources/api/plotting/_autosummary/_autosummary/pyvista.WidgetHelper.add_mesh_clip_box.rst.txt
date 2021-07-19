@@ -1,0 +1,6 @@
+add\_mesh\_clip\_box
+====================
+
+.. currentmodule:: pyvista
+
+.. automethod:: WidgetHelper.add_mesh_clip_box

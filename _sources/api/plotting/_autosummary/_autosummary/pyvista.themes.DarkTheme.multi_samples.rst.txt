@@ -1,0 +1,6 @@
+multi\_samples
+==============
+
+.. currentmodule:: pyvista.themes
+
+.. autoproperty:: DarkTheme.multi_samples

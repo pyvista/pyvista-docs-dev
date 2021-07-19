@@ -1,0 +1,6 @@
+model\_transform\_matrix
+========================
+
+.. currentmodule:: pyvista
+
+.. autoproperty:: Camera.model_transform_matrix

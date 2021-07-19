@@ -1,0 +1,6 @@
+remove\_background\_image
+=========================
+
+.. currentmodule:: pyvista
+
+.. automethod:: Plotter.remove_background_image

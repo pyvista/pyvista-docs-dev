@@ -1,0 +1,207 @@
+﻿pyvista.Light
+=============
+
+.. currentmodule:: pyvista
+
+.. autoclass:: Light
+
+   
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :toctree: _autosummary
+   
+      
+      
+      Light.add_renderer
+      
+      
+      Light.copy
+      
+      
+      Light.from_vtk
+      
+      
+      Light.hide_actor
+      
+      
+      Light.set_camera_light
+      
+      
+      Light.set_direction_angle
+      
+      
+      Light.set_headlight
+      
+      
+      Light.set_scene_light
+      
+      
+      Light.show_actor
+      
+      
+      Light.switch_off
+      
+      
+      Light.switch_on
+      
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+      :toctree: _autosummary
+   
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      Light.ambient_color
+      
+      
+      Light.attenuation_values
+      
+      
+      Light.cone_angle
+      
+      
+      Light.diffuse_color
+      
+      
+      Light.exponent
+      
+      
+      Light.focal_point
+      
+      
+      Light.intensity
+      
+      
+      Light.is_camera_light
+      
+      
+      Light.is_headlight
+      
+      
+      Light.is_scene_light
+      
+      
+      Light.light_type
+      
+      
+      Light.on
+      
+      
+      Light.position
+      
+      
+      Light.positional
+      
+      
+      Light.renderers
+      
+      
+      Light.shadow_attenuation
+      
+      
+      Light.specular_color
+      
+      
+      Light.transform_matrix
+      
+      
+      Light.world_focal_point
+      
+      
+      Light.world_position
+      
+   
+   

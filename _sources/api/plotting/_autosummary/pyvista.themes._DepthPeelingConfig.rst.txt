@@ -1,0 +1,43 @@
+﻿pyvista.themes.\_DepthPeelingConfig
+===================================
+
+.. currentmodule:: pyvista.themes
+
+.. autoclass:: _DepthPeelingConfig
+
+   
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :toctree: _autosummary
+   
+      
+      
+      _DepthPeelingConfig.from_dict
+      
+      
+      _DepthPeelingConfig.to_dict
+      
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+      :toctree: _autosummary
+   
+      
+      _DepthPeelingConfig.enabled
+      
+      
+      _DepthPeelingConfig.number_of_peels
+      
+      
+      _DepthPeelingConfig.occlusion_ratio
+      
+   
+   

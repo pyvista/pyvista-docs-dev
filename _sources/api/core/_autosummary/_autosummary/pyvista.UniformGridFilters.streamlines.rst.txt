@@ -1,0 +1,6 @@
+streamlines
+===========
+
+.. currentmodule:: pyvista
+
+.. automethod:: UniformGridFilters.streamlines

@@ -1,0 +1,6 @@
+enable\_shadows
+===============
+
+.. currentmodule:: pyvista
+
+.. automethod:: Renderer.enable_shadows

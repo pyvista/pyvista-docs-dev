@@ -1,0 +1,6 @@
+renderers
+=========
+
+.. currentmodule:: pyvista
+
+.. autoproperty:: Light.renderers

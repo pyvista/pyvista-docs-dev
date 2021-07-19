@@ -1,0 +1,6 @@
+interactive
+===========
+
+.. currentmodule:: pyvista.themes
+
+.. autoproperty:: ParaViewTheme.interactive

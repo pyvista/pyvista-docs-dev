@@ -1,0 +1,6 @@
+tube\_color
+===========
+
+.. currentmodule:: pyvista.themes
+
+.. autoproperty:: _SliderStyleConfig.tube_color

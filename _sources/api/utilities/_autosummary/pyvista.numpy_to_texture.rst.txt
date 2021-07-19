@@ -1,0 +1,6 @@
+﻿numpy\_to\_texture
+==================
+
+.. currentmodule:: pyvista
+
+.. autofunction:: numpy_to_texture

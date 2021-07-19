@@ -1,0 +1,6 @@
+deep\_clean
+===========
+
+.. currentmodule:: pyvista
+
+.. automethod:: Plotter.deep_clean

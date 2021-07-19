@@ -1,0 +1,6 @@
+switch\_off
+===========
+
+.. currentmodule:: pyvista
+
+.. automethod:: Light.switch_off

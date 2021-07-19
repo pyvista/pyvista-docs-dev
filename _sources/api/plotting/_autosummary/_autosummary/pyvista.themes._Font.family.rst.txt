@@ -1,0 +1,6 @@
+family
+======
+
+.. currentmodule:: pyvista.themes
+
+.. autoproperty:: _Font.family

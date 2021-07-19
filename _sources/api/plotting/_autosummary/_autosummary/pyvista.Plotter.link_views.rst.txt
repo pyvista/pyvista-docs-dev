@@ -1,0 +1,6 @@
+link\_views
+===========
+
+.. currentmodule:: pyvista
+
+.. automethod:: Plotter.link_views

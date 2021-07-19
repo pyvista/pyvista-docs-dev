@@ -1,0 +1,6 @@
+cell\_centers
+=============
+
+.. currentmodule:: pyvista
+
+.. automethod:: UnstructuredGridFilters.cell_centers

@@ -1,0 +1,6 @@
+disable\_3\_lights
+==================
+
+.. currentmodule:: pyvista
+
+.. automethod:: Plotter.disable_3_lights

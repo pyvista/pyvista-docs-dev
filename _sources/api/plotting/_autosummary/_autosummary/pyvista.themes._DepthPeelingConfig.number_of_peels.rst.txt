@@ -1,0 +1,6 @@
+number\_of\_peels
+=================
+
+.. currentmodule:: pyvista.themes
+
+.. autoproperty:: _DepthPeelingConfig.number_of_peels

@@ -1,0 +1,6 @@
+set\_scene\_light
+=================
+
+.. currentmodule:: pyvista
+
+.. automethod:: Light.set_scene_light

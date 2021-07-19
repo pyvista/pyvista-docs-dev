@@ -1,0 +1,6 @@
+title\_size
+===========
+
+.. currentmodule:: pyvista.themes
+
+.. autoproperty:: _Font.title_size

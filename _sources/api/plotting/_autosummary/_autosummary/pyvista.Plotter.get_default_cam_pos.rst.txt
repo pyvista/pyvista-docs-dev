@@ -1,0 +1,6 @@
+get\_default\_cam\_pos
+======================
+
+.. currentmodule:: pyvista
+
+.. automethod:: Plotter.get_default_cam_pos

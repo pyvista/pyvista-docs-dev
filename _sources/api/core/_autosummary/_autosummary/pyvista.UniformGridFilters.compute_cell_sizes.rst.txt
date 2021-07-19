@@ -1,0 +1,6 @@
+compute\_cell\_sizes
+====================
+
+.. currentmodule:: pyvista
+
+.. automethod:: UniformGridFilters.compute_cell_sizes

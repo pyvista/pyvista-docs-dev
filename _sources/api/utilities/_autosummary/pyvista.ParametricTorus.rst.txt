@@ -1,0 +1,6 @@
+﻿ParametricTorus
+===============
+
+.. currentmodule:: pyvista
+
+.. autofunction:: ParametricTorus

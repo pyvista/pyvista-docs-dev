@@ -1,0 +1,6 @@
+add\_arrows
+===========
+
+.. currentmodule:: pyvista
+
+.. automethod:: Plotter.add_arrows

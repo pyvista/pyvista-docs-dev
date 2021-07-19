@@ -1,0 +1,6 @@
+﻿Plane
+=====
+
+.. currentmodule:: pyvista
+
+.. autofunction:: Plane

@@ -1,0 +1,6 @@
+load\_theme
+===========
+
+.. currentmodule:: pyvista.themes
+
+.. automethod:: DefaultTheme.load_theme

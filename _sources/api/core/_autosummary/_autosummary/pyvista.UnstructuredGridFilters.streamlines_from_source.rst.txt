@@ -1,0 +1,6 @@
+streamlines\_from\_source
+=========================
+
+.. currentmodule:: pyvista
+
+.. automethod:: UnstructuredGridFilters.streamlines_from_source

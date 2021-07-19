@@ -1,0 +1,151 @@
+﻿pyvista.themes.DarkTheme
+========================
+
+.. currentmodule:: pyvista.themes
+
+.. autoclass:: DarkTheme
+
+   
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :toctree: _autosummary
+   
+      
+      
+      DarkTheme.from_dict
+      
+      
+      DarkTheme.load_theme
+      
+      
+      DarkTheme.restore_defaults
+      
+      
+      DarkTheme.save
+      
+      
+      DarkTheme.to_dict
+      
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+      :toctree: _autosummary
+   
+      
+      DarkTheme.auto_close
+      
+      
+      DarkTheme.axes
+      
+      
+      DarkTheme.background
+      
+      
+      DarkTheme.camera
+      
+      
+      DarkTheme.cmap
+      
+      
+      DarkTheme.color
+      
+      
+      DarkTheme.colorbar_horizontal
+      
+      
+      DarkTheme.colorbar_orientation
+      
+      
+      DarkTheme.colorbar_vertical
+      
+      
+      DarkTheme.depth_peeling
+      
+      
+      DarkTheme.edge_color
+      
+      
+      DarkTheme.floor_color
+      
+      
+      DarkTheme.font
+      
+      
+      DarkTheme.full_screen
+      
+      
+      DarkTheme.hidden_line_removal
+      
+      
+      DarkTheme.interactive
+      
+      
+      DarkTheme.jupyter_backend
+      
+      
+      DarkTheme.lighting
+      
+      
+      DarkTheme.multi_rendering_splitting_position
+      
+      
+      DarkTheme.multi_samples
+      
+      
+      DarkTheme.name
+      
+      
+      DarkTheme.nan_color
+      
+      
+      DarkTheme.notebook
+      
+      
+      DarkTheme.outline_color
+      
+      
+      DarkTheme.render_points_as_spheres
+      
+      
+      DarkTheme.return_cpos
+      
+      
+      DarkTheme.show_edges
+      
+      
+      DarkTheme.show_scalar_bar
+      
+      
+      DarkTheme.silhouette
+      
+      
+      DarkTheme.slider_styles
+      
+      
+      DarkTheme.smooth_shading
+      
+      
+      DarkTheme.title
+      
+      
+      DarkTheme.transparent_background
+      
+      
+      DarkTheme.use_ipyvtk
+      
+      
+      DarkTheme.volume_mapper
+      
+      
+      DarkTheme.window_size
+      
+   
+   

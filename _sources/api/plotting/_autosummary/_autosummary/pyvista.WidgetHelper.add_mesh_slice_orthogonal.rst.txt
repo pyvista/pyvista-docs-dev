@@ -1,0 +1,6 @@
+add\_mesh\_slice\_orthogonal
+============================
+
+.. currentmodule:: pyvista
+
+.. automethod:: WidgetHelper.add_mesh_slice_orthogonal

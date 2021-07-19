@@ -1,0 +1,6 @@
+view\_frustum
+=============
+
+.. currentmodule:: pyvista
+
+.. automethod:: Camera.view_frustum

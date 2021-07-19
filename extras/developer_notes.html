@@ -1,0 +1,765 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contributing &#8212; PyVista 0.31.dev0 documentation</title>
+    
+  <link href="../_static/css/theme.css" rel="stylesheet" />
+  <link href="../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/basic.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/jupyter-sphinx.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/thebelab.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/gallery.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/gallery-binder.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/gallery-dataframe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/gallery-rendered-html.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../_static/js/index.1c5a1a01449ed65a7b51.js">
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script src="../_static/thebelab-helper.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.20.0/dist/embed-amd.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Sphinx PyVista Plot Directive" href="plot_directive.html" />
+    <link rel="prev" title="Flask Application" href="flask.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en" />
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+    <nav class="navbar navbar-light navbar-expand-lg bg-light fixed-top bd-navbar" id="navbar-main"><div class="container-xl">
+
+  <div id="navbar-start">
+    
+    
+
+<a class="navbar-brand" href="../index.html">
+  <img src="../_static/pyvista_logo_sm.png" class="logo" alt="logo">
+</a>
+
+
+    
+  </div>
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-collapsible" aria-controls="navbar-collapsible" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  
+  <div id="navbar-collapsible" class="col-lg-9 collapse navbar-collapse">
+    <div id="navbar-center" class="mr-auto">
+      
+      <div class="navbar-center-item">
+        <ul id="navbar-main-elements" class="navbar-nav">
+    <li class="toctree-l1 nav-item">
+ <a class="reference internal nav-link" href="../getting-started/index.html">
+  Getting Started
+ </a>
+</li>
+
+<li class="toctree-l1 nav-item">
+ <a class="reference internal nav-link" href="../user-guide/index.html">
+  User Guide
+ </a>
+</li>
+
+<li class="toctree-l1 nav-item">
+ <a class="reference internal nav-link" href="../examples/index.html">
+  Examples
+ </a>
+</li>
+
+<li class="toctree-l1 nav-item">
+ <a class="reference internal nav-link" href="../api/index.html">
+  API Reference
+ </a>
+</li>
+
+<li class="toctree-l1 current active nav-item">
+ <a class="reference internal nav-link" href="index.html">
+  Extras
+ </a>
+</li>
+
+    
+</ul>
+      </div>
+      
+    </div>
+
+    <div id="navbar-end">
+      
+      <div class="navbar-end-item">
+        <ul id="navbar-icon-links" class="navbar-nav" aria-label="Icon Links">
+        <li class="nav-item">
+          <a class="nav-link" href="https://github.com/pyvista/pyvista" rel="noopener" target="_blank" title="GitHub">
+            <span><i class="fab fa-github-square"></i></span>
+            <label class="sr-only">GitHub</label>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="http://slack.pyvista.org" rel="noopener" target="_blank" title="Slack Community">
+            <span><i class="fab fa-slack"></i></span>
+            <label class="sr-only">Slack Community</label>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://github.com/pyvista/pyvista/discussions" rel="noopener" target="_blank" title="Support">
+            <span><i class="fa fa-comment fa-fw"></i></span>
+            <label class="sr-only">Support</label>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://github.com/pyvista/pyvista/blob/main/CONTRIBUTING.md" rel="noopener" target="_blank" title="Contributing">
+            <span><i class="fa fa-gavel fa-fw"></i></span>
+            <label class="sr-only">Contributing</label>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://doi.org/10.21105/joss.01450" rel="noopener" target="_blank" title="The Paper">
+            <span><i class="fa fa-file-text fa-fw"></i></span>
+            <label class="sr-only">The Paper</label>
+          </a>
+        </li>
+      </ul>
+      </div>
+      
+    </div>
+  </div>
+</div>
+    </nav>
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+            
+            <!-- Only show if we have sidebars configured, else just a small margin  -->
+            <div class="col-12 col-md-3 bd-sidebar"><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search the docs ..." aria-label="Search the docs ..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+  <div class="bd-toc-item active">
+    <ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="building_vtk.html">
+   Building VTK
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="docker.html">
+   PyVista within a Docker Container
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="pyinstaller.html">
+   Freezing PyVista with pyinstaller
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="flask.html">
+   Flask Application
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Contributing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="plot_directive.html">
+   Sphinx PyVista Plot Directive
+  </a>
+ </li>
+</ul>
+
+  </div>
+</nav>
+            </div>
+            
+          
+
+          
+          <div class="d-none d-xl-block col-xl-2 bd-toc">
+            
+              
+              <div class="toc-item">
+                
+<div class="tocsection onthispage pt-5 pb-3">
+    <i class="fas fa-list"></i> On this page
+</div>
+
+<nav id="bd-toc-nav">
+    <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#cloning-the-source-repository">
+   Cloning the Source Repository
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#questions">
+   Questions
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#reporting-bugs">
+   Reporting Bugs
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#feature-requests">
+   Feature Requests
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#contributing-new-code">
+   Contributing New Code
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#licensing">
+   Licensing
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#development-practices">
+   Development Practices
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#guidelines">
+     Guidelines
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#contributing-to-pyvista-through-github">
+     Contributing to pyvista through GitHub
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#coding-style">
+       Coding Style
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#branch-naming-conventions">
+       Branch Naming Conventions
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#testing">
+       Testing
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#notes-regarding-image-regression-testing">
+       Notes Regarding Image Regression Testing
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#creating-a-new-pull-request">
+       Creating a New Pull Request
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#branching-model">
+     Branching Model
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#minor-release-steps">
+       Minor Release Steps
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#patch-release-steps">
+       Patch Release Steps
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+</nav>
+              </div>
+              
+              <div class="toc-item">
+                
+              </div>
+              
+            
+          </div>
+          
+
+          
+          
+            
+          
+          <main class="col-12 col-md-9 col-xl-7 py-md-5 pl-md-5 pr-md-4 bd-content" role="main">
+              
+              <div>
+                
+  <div class="section" id="contributing">
+<span id="ref-developer-notes"></span><h1>Contributing<a class="headerlink" href="#contributing" title="Permalink to this headline">¶</a></h1>
+<p>We absolutely welcome contributions and we hope that this guide will
+facilitate an understanding of the PyVista code repository. It is
+important to note that the PyVista software package is maintained on a
+volunteer basis and thus we need to foster a community that can support
+user questions and develop new features to make this software a useful
+tool for all users.</p>
+<p>This page is dedicated to outline where you should start with your
+question, concern, feature request, or desire to contribute.</p>
+<div class="section" id="cloning-the-source-repository">
+<h2>Cloning the Source Repository<a class="headerlink" href="#cloning-the-source-repository" title="Permalink to this headline">¶</a></h2>
+<p>You can clone the source repository from
+<code class="docutils literal notranslate"><span class="pre">https://github.com/pyvista/pyvista</span></code> and install the latest version by
+running:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git clone https://github.com/pyvista/pyvista.git
+<span class="nb">cd</span> pyvista
+python -m pip install -e .
+</pre></div>
+</div>
+</div>
+<div class="section" id="questions">
+<h2>Questions<a class="headerlink" href="#questions" title="Permalink to this headline">¶</a></h2>
+<p>For general questions about the project, its applications, or about
+software usage, please create a discussion in
+<a class="reference external" href="https://github.com/pyvista/pyvista/discussions">pyvista/discussions</a>
+where the community can collectively address your questions.
+You are also welcome to join us on <a class="reference external" href="http://slack.pyvista.org">Slack</a>
+or send one of the developers an email. The project support team can be
+reached at <a class="reference external" href="mailto:info&#37;&#52;&#48;pyvista&#46;org">info<span>&#64;</span>pyvista<span>&#46;</span>org</a></p>
+<p>For more technical questions, you are welcome to create an issue on the
+<a class="reference external" href="https://github.com/pyvista/pyvista/issues">issues page</a> which we
+will address promptly. Through posting on the issues page, your question
+can be addressed by community members with the needed expertise and the
+information gained will remain available on the issues page for other
+users.</p>
+</div>
+<div class="section" id="reporting-bugs">
+<h2>Reporting Bugs<a class="headerlink" href="#reporting-bugs" title="Permalink to this headline">¶</a></h2>
+<p>If you stumble across any bugs, crashes, or concerning quirks while
+using code distributed here, please report it on the <a class="reference external" href="https://github.com/pyvista/pyvista/issues">issues
+page</a> with an appropriate
+label so we can promptly address it. When reporting an issue, please be
+overly descriptive so that we may reproduce it. Whenever possible,
+please provide tracebacks, screenshots, and sample files to help us
+address the issue.</p>
+</div>
+<div class="section" id="feature-requests">
+<h2>Feature Requests<a class="headerlink" href="#feature-requests" title="Permalink to this headline">¶</a></h2>
+<p>We encourage users to submit ideas for improvements to PyVista code
+base! Please create an issue on the <a class="reference external" href="https://github.com/pyvista/pyvista/issues">issues
+page</a> with a <em>Feature
+Request</em> label to suggest an improvement. Please use a descriptive title
+and provide ample background information to help the community implement
+that functionality. For example, if you would like a reader for a
+specific file format, please provide a link to documentation of that
+file format and possibly provide some sample files with screenshots to
+work with. We will use the issue thread as a place to discuss and
+provide feedback.</p>
+</div>
+<div class="section" id="contributing-new-code">
+<h2>Contributing New Code<a class="headerlink" href="#contributing-new-code" title="Permalink to this headline">¶</a></h2>
+<p>If you have an idea for how to improve PyVista, please first create an
+issue as a feature request which we can use as a discussion thread to
+work through how to implement the contribution.</p>
+<p>Once you are ready to start coding and develop for PyVista, please see
+the <a class="reference external" href="#development-practices">Development Practices</a> section for more
+details.</p>
+</div>
+<div class="section" id="licensing">
+<h2>Licensing<a class="headerlink" href="#licensing" title="Permalink to this headline">¶</a></h2>
+<p>All contributed code will be licensed under The MIT License found in the
+repository. If you did not write the code yourself, it is your
+responsibility to ensure that the existing license is compatible and
+included in the contributed files or you can obtain permission from the
+original author to relicense the code.</p>
+</div>
+<hr class="docutils" />
+<div class="section" id="development-practices">
+<h2>Development Practices<a class="headerlink" href="#development-practices" title="Permalink to this headline">¶</a></h2>
+<p>This section provides a guide to how we conduct development in the
+PyVista repository. Please follow the practices outlined here when
+contributing directly to this repository.</p>
+<div class="section" id="guidelines">
+<h3>Guidelines<a class="headerlink" href="#guidelines" title="Permalink to this headline">¶</a></h3>
+<p>Through direct access to the Visualization Toolkit (VTK) via direct
+array access and intuitive Python properties, we hope to make the entire
+VTK library easily accessible to researchers of all disciplines. To
+further PyVista towards being the de facto Python interface to VTK, we
+need your help to make it even better!</p>
+<p>If you want to add one or two interesting analysis algorithms as
+filters, implement a new plotting routine, or just fix 1-2 typos - your
+efforts are welcome!</p>
+<p>There are three general coding paradigms that we believe in:</p>
+<ol class="arabic simple">
+<li><p><strong>Make it intuitive</strong>. PyVista’s goal is to create an intuitive and
+easy to use interface back to the VTK library. Any new features
+should have intuitive naming conventions and explicit keyword
+arguments for users to make the bulk of the library accessible to
+novice users.</p></li>
+<li><p><strong>Document everything!</strong> At the least, include a docstring for any
+method or class added. Do not describe what you are doing but why you
+are doing it and provide simple use cases for the new features.</p></li>
+<li><p><strong>Keep it tested</strong>. We aim for a high test coverage. See testing for
+more details.</p></li>
+</ol>
+<p>There are two important copyright guidelines:</p>
+<ol class="arabic simple" start="4">
+<li><p>Please do not include any data sets for which a license is not
+available or commercial use is prohibited. Those can undermine the
+license of the whole projects.</p></li>
+<li><p>Do not use code snippets for which a license is not available (e.g.
+from stackoverflow) or commercial use is prohibited. Those can
+undermine the license of the whole projects.</p></li>
+</ol>
+<p>Please also take a look at our <a class="reference external" href="https://github.com/pyvista/pyvista/blob/main/CODE_OF_CONDUCT.md">Code of
+Conduct</a></p>
+</div>
+<div class="section" id="contributing-to-pyvista-through-github">
+<h3>Contributing to pyvista through GitHub<a class="headerlink" href="#contributing-to-pyvista-through-github" title="Permalink to this headline">¶</a></h3>
+<p>To submit new code to pyvista, first fork the <a class="reference external" href="https://github.com/pyvista/pyvista">pyvista GitHub
+Repo</a> and then clone the forked
+repository to your computer. Then, create a new branch based on the
+<a class="reference external" href="#branch-naming-conventions">Branch Naming Conventions Section</a> in
+your local repository.</p>
+<p>Next, add your new feature and commit it locally. Be sure to commit
+often as it is often helpful to revert to past commits, especially if
+your change is complex. Also, be sure to test often. See the <a class="reference external" href="#testing">Testing
+Section</a> below for automating testing.</p>
+<p>When you are ready to submit your code, create a pull request by
+following the steps in the <a class="reference external" href="#creating-a-new-pull-request">Creating a New Pull Request
+section</a>.</p>
+<div class="section" id="coding-style">
+<h4>Coding Style<a class="headerlink" href="#coding-style" title="Permalink to this headline">¶</a></h4>
+<p>We adhere to <a class="reference external" href="https://www.python.org/dev/peps/pep-0008/">PEP 8</a>
+wherever possible, except that line widths are permitted to go beyond 79
+characters to a max of 90 to 100 characters.</p>
+<p>Outside of PEP 8, when coding please consider <a class="reference external" href="https://www.python.org/dev/peps/pep-0020/">PEP 20 – The Zen of
+Python</a>. When in doubt:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">this</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="branch-naming-conventions">
+<h4>Branch Naming Conventions<a class="headerlink" href="#branch-naming-conventions" title="Permalink to this headline">¶</a></h4>
+<p>To streamline development, we have the following requirements for naming
+branches. These requirements help the core developers know what kind of
+changes any given branch is introducing before looking at the code.</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">fix/</span></code>: any bug fixes, patches, or experimental changes that are
+minor</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">feat/</span></code>: any changes that introduce a new feature or significant
+addition</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">junk/</span></code>: for any experimental changes that can be deleted if gone
+stale</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">maint/</span></code>: for general maintenance of the repository or CI routines</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">doc/</span></code>: for any changes only pertaining to documentation</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">no-ci/</span></code>: for low impact activity that should NOT trigger the CI
+routines</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">testing/</span></code>: improvements or changes to testing</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">release/</span></code>: releases (see below)</p></li>
+</ul>
+</div>
+<div class="section" id="testing">
+<h4>Testing<a class="headerlink" href="#testing" title="Permalink to this headline">¶</a></h4>
+<p>After making changes, please test changes locally before creating a pull
+request. The following tests will be executed after any commit or pull
+request, so we ask that you perform the following sequence locally to
+track down any new issues from your changes.</p>
+<p>To run our comprehensive suite of unit tests, install all the
+dependencies listed in <code class="docutils literal notranslate"><span class="pre">requirements_test.txt</span></code>,
+<code class="docutils literal notranslate"><span class="pre">requirements_docs.txt</span></code>, <code class="docutils literal notranslate"><span class="pre">requirements_style.txt</span></code>:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pip install -r requirements_test.txt
+pip install -r requirements_docs.txt
+pip install -r requirements_style.txt
+</pre></div>
+</div>
+<p>Then, if you have everything installed, you can run the various test
+suites.</p>
+<p>Run the primary test suite and generate coverage report:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>python -m pytest -v --cov pyvista
+</pre></div>
+</div>
+<p>Run all code examples in the docstrings:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>python -m pytest -v --doctest-modules pyvista
+</pre></div>
+</div>
+<p>Run documentation testing by running</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>make
+</pre></div>
+</div>
+<p>If you are running windows and <code class="docutils literal notranslate"><span class="pre">make</span></code> is unavailable, then run:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">pydocstyle</span> <span class="n">pyvista</span>
+
+<span class="n">codespell</span> <span class="n">pyvista</span><span class="o">/</span> <span class="n">examples</span><span class="o">/</span> <span class="n">tests</span><span class="o">/</span> <span class="o">-</span><span class="n">S</span> <span class="s2">&quot;*.pyc,*.txt,*.gif,*.png,*.jpg,*.ply,*.vtk,*.vti,*.js,*.html,*.doctree,*.ttf,*.woff,*.woff2,*.eot,*.mp4,*.inv,*.pickle,*.ipynb,flycheck*&quot;</span> <span class="o">-</span><span class="n">I</span> <span class="s2">&quot;ignore_words.txt&quot;</span>
+</pre></div>
+</div>
+<p>And finally, test the documentation examples:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">cd</span> doc
+make clean
+make doctest
+make html -b linkcheck
+</pre></div>
+</div>
+<p>The finished documentation can be found in the <code class="docutils literal notranslate"><span class="pre">doc/_build/html</span></code>
+directory.</p>
+</div>
+<div class="section" id="notes-regarding-image-regression-testing">
+<h4>Notes Regarding Image Regression Testing<a class="headerlink" href="#notes-regarding-image-regression-testing" title="Permalink to this headline">¶</a></h4>
+<p>Since <code class="docutils literal notranslate"><span class="pre">pyvista</span></code> is primarily a plotting module, it’s imperative we
+actually check the images that we generate in some sort of regression
+testing.  In practice, this ends up being quite a bit of work because:</p>
+<ul class="simple">
+<li><p>OpenGL software vs. hardware rending causes slightly different
+images to be rendered.</p></li>
+<li><p>We want our CI (which uses a virtual frame buffer) to match our
+desktop images (uses hardware acceleration).</p></li>
+<li><p>Different OSes render different images.</p></li>
+</ul>
+<p>As each platform and environment renders different slightly images
+relative to Linux (which these images were built from), so running
+these tests across all OSes isn’t optimal.  We could generate
+different images for each OS, but it’s overkill in my opinion; we need
+to know if something fundamental changed with our plotting without
+actually looking at the plots (like the docs at dev.pyvista.com)</p>
+<p>Based on these points, image regression testing only occurs on Linux
+CI, and multi-sampling is disabled as that seems to be one of the
+biggest difference between software and hardware based rendering.</p>
+<p>Image cache is stored here as ./image_cache</p>
+<p>Image resolution is kept low at 400x400 as we don’t want to pollute
+git with large images.  Small variations between versions and
+environments are to be expected, so error &lt; <code class="docutils literal notranslate"><span class="pre">IMAGE_REGRESSION_ERROR</span></code>
+is allowable (and will be logged as a warning) while values over that
+amount will trigger an error.</p>
+<p>There are two mechanisms within <code class="docutils literal notranslate"><span class="pre">pytest</span></code> to control image regression
+testing, <code class="docutils literal notranslate"><span class="pre">--reset_image_cache</span></code> and <code class="docutils literal notranslate"><span class="pre">--ignore_image_cache</span></code>.  For
+example:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pytest tests/plotting --reset_image_cache
+</pre></div>
+</div>
+<p>Running <code class="docutils literal notranslate"><span class="pre">--reset_image_cache</span></code> creates a new image for each test in
+<code class="docutils literal notranslate"><span class="pre">tests/plotting/test_plotting.py</span></code> and is not recommended except for
+testing or for potentially a major or minor release.  You can use
+<code class="docutils literal notranslate"><span class="pre">--ignore_image_cache</span></code> if you’re running on Linux and want to
+temporarily ignore regression testing.  Realize that regression
+testing will still occur on our CI testing.</p>
+<p>If you need to add a new test to <code class="docutils literal notranslate"><span class="pre">tests/plotting/test_plotting.py</span></code>
+and wish to include image regression testing, be sure to add
+<code class="docutils literal notranslate"><span class="pre">verify_cache_image</span></code> to <code class="docutils literal notranslate"><span class="pre">show</span></code>.  For example:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="nd">@skip_no_plotting</span>
+<span class="k">def</span> <span class="nf">test_add_background_image_not_global</span><span class="p">():</span>
+    <span class="n">plotter</span> <span class="o">=</span> <span class="n">pyvista</span><span class="o">.</span><span class="n">Plotter</span><span class="p">()</span>
+    <span class="n">plotter</span><span class="o">.</span><span class="n">add_mesh</span><span class="p">(</span><span class="n">sphere</span><span class="p">)</span>
+    <span class="n">plotter</span><span class="o">.</span><span class="n">show</span><span class="p">(</span><span class="n">before_close_callback</span><span class="o">=</span><span class="n">verify_cache_image</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>This ensures that immediately before the plotter is closed, the
+current render window will be verified against the image in CI.  If no
+image exists, be sure to add the resulting image with <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">add</span>
+<span class="pre">tests/plotting/image_cache/*</span></code>.</p>
+</div>
+<div class="section" id="creating-a-new-pull-request">
+<h4>Creating a New Pull Request<a class="headerlink" href="#creating-a-new-pull-request" title="Permalink to this headline">¶</a></h4>
+<p>Once you have tested your branch locally, create a pull request on
+<a class="reference external" href="https://github.com/pyvista/pyvista">pyvista GitHub</a> while merging to
+main. This will automatically run continuous integration (CI) testing
+and verify your changes will work across several platforms.</p>
+<p>To ensure someone else reviews your code, at least one other member of
+the pyvista contributors group must review and verify your code meets
+our community’s standards. Once approved, if you have write permission
+you may merge the branch. If you don’t have write permission, the
+reviewer or someone else with write permission will merge the branch and
+delete the PR branch.</p>
+<p>Since it may be necessary to merge your branch with the current release
+branch (see below), please do not delete your branch if it is a <code class="docutils literal notranslate"><span class="pre">fix/</span></code>
+branch.</p>
+</div>
+</div>
+<div class="section" id="branching-model">
+<h3>Branching Model<a class="headerlink" href="#branching-model" title="Permalink to this headline">¶</a></h3>
+<p>This project has a branching model that enables rapid development of
+features without sacrificing stability, and closely follows the <a class="reference external" href="https://trunkbaseddevelopment.com/">Trunk
+Based Development</a> approach.</p>
+<p>The main features of our branching model are:</p>
+<ul class="simple">
+<li><p>The <code class="docutils literal notranslate"><span class="pre">main</span></code> branch is the main development branch. All features,
+patches, and other branches should be merged here. While all PRs
+should pass all applicable CI checks, this branch may be functionally
+unstable as changes might have introduced unintended side-effects or
+bugs that were not caught through unit testing.</p></li>
+<li><p>There will be one or many <code class="docutils literal notranslate"><span class="pre">release/</span></code> branches based on minor
+releases (for example <code class="docutils literal notranslate"><span class="pre">release/0.24</span></code>) which contain a stable
+version of the code base that is also reflected on PyPI/. Hotfixes
+from <code class="docutils literal notranslate"><span class="pre">fix/</span></code> branches should be merged both to main and to these
+branches. When necessary to create a new patch release these release
+branches will have their <code class="docutils literal notranslate"><span class="pre">__version__.py</span></code> updated and be tagged
+with a patched semantic version (e.g. <code class="docutils literal notranslate"><span class="pre">0.24.1</span></code>). This triggers CI
+to push to PyPI, and allow us to rapidly push hotfixes for past
+versions of <code class="docutils literal notranslate"><span class="pre">pyvista</span></code> without having to worry about untested
+features.</p></li>
+<li><p>When a minor release candidate is ready, a new <code class="docutils literal notranslate"><span class="pre">release</span></code> branch
+will be created from <code class="docutils literal notranslate"><span class="pre">main</span></code> with the next incremented minor
+version (e.g. <code class="docutils literal notranslate"><span class="pre">release/0.25</span></code>), which will be thoroughly tested.
+When deemed stable, the release branch will be tagged with the
+version (<code class="docutils literal notranslate"><span class="pre">0.25.0</span></code> in this case), and if necessary merged with
+main if any changes were pushed to it. Feature development then
+continues on <code class="docutils literal notranslate"><span class="pre">main</span></code> and any hotfixes will now be merged with this
+release. Older release branches should not be deleted so they can be
+patched as needed.</p></li>
+</ul>
+<div class="section" id="minor-release-steps">
+<h4>Minor Release Steps<a class="headerlink" href="#minor-release-steps" title="Permalink to this headline">¶</a></h4>
+<p>Minor releases are feature and bug releases that improve the
+functionality and stability of <code class="docutils literal notranslate"><span class="pre">pyvista</span></code>. Before a minor release is
+created the following will occur:</p>
+<ol class="arabic">
+<li><p>Create a new branch from the <code class="docutils literal notranslate"><span class="pre">main</span></code> branch with name
+<code class="docutils literal notranslate"><span class="pre">release/MAJOR.MINOR</span></code> (e.g. <code class="docutils literal notranslate"><span class="pre">release/0.25</span></code>).</p></li>
+<li><p>Locally run all tests as outlined in the <a class="reference external" href="#testing">Testing
+Section</a> and ensure all are passing.</p></li>
+<li><p>Locally test and build the documentation with link checking to make
+sure no links are outdated. Be sure to run <code class="docutils literal notranslate"><span class="pre">make</span> <span class="pre">clean</span></code> to ensure
+no results are cached.
+<code class="docutils literal notranslate"><span class="pre">bash</span>&#160;&#160;&#160;&#160; <span class="pre">cd</span> <span class="pre">doc</span>&#160;&#160;&#160;&#160; <span class="pre">make</span> <span class="pre">clean</span>&#160; <span class="pre">#</span> <span class="pre">deletes</span> <span class="pre">the</span> <span class="pre">sphinx-gallery</span> <span class="pre">cache</span>&#160;&#160;&#160;&#160; <span class="pre">make</span> <span class="pre">doctest</span>&#160;&#160;&#160;&#160; <span class="pre">make</span> <span class="pre">html</span> <span class="pre">-b</span> <span class="pre">linkcheck</span></code></p></li>
+<li><p>After building the documentation, open the local build and examine
+the examples gallery for any obvious issues.</p></li>
+<li><p>Update the version numbers in <code class="docutils literal notranslate"><span class="pre">pyvista/_version.py</span></code> and commit it.
+Push the branch to GitHub and create a new PR for this release that
+merges it to main. Development to main should be limited at this
+point while effort is focused on the release.</p></li>
+<li><p>It is now the responsibility of the <code class="docutils literal notranslate"><span class="pre">pyvista</span></code> community to
+functionally test the new release. It is best to locally install
+this branch and use it in production. Any bugs identified should
+have their hotfixes pushed to this release branch.</p></li>
+<li><p>When the branch is deemed as stable for public release, the PR will
+be merged to main and the <code class="docutils literal notranslate"><span class="pre">main</span></code> branch will be tagged with a
+<code class="docutils literal notranslate"><span class="pre">MAJOR.MINOR.0</span></code> release. The release branch will not be deleted.
+Tag the release with:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git tag MAJOR.MINOR.0
+git push origin --tags
+</pre></div>
+</div>
+</li>
+<li><p>Create a list of all changes for the release. It is often helpful to
+leverage <a class="reference external" href="https://github.com/pyvista/pyvista/compare">GitHub’s *compare*
+feature</a> to see the
+differences from the last tag and the <code class="docutils literal notranslate"><span class="pre">main</span></code> branch. Be sure to
+acknowledge new contributors by their GitHub username and place
+mentions where appropriate if a specific contributor is to thank for
+a new feature.</p></li>
+<li><p>Place your release notes from step 8 in the description for <a class="reference external" href="https://github.com/pyvista/pyvista/releases/new">the new
+release on
+GitHub</a></p></li>
+<li><p>Go grab a beer/coffee/water and wait for
+[&#64;regro-cf-autotick-bot](<a class="reference external" href="https://github.com/regro-cf-autotick-bot">https://github.com/regro-cf-autotick-bot</a>)
+to open a pull request on the conda-forge <a class="reference external" href="https://github.com/conda-forge/pyvista-feedstock">PyVista
+feedstock</a>.
+Merge that pull request.</p></li>
+<li><p>Announce the new release in the PyVista Slack workspace and
+celebrate!</p></li>
+</ol>
+</div>
+<div class="section" id="patch-release-steps">
+<h4>Patch Release Steps<a class="headerlink" href="#patch-release-steps" title="Permalink to this headline">¶</a></h4>
+<p>Patch releases are for critical and important bugfixes that can not or
+should not wait until a minor release. The steps for a patch release</p>
+<ol class="arabic simple">
+<li><p>Push the necessary bugfix(es) to the applicable release branch. This
+will generally be the latest release branch (e.g. <code class="docutils literal notranslate"><span class="pre">release/0.25</span></code>).</p></li>
+<li><p>Update <code class="docutils literal notranslate"><span class="pre">__version__.py</span></code> with the next patch increment (e.g.
+<code class="docutils literal notranslate"><span class="pre">0.25.1</span></code>), commit it, and open a PR that merge with the release
+branch. This gives the <code class="docutils literal notranslate"><span class="pre">pyvista</span></code> community a chance to validate and
+approve the bugfix release. Any additional hotfixes should be outside
+of this PR.</p></li>
+<li><p>When approved, merge with the release branch, but not <code class="docutils literal notranslate"><span class="pre">main</span></code> as
+there is no reason to increment the version of the <code class="docutils literal notranslate"><span class="pre">main</span></code> branch.
+Then create a tag from the release branch with the applicable version
+number (see above for the correct steps).</p></li>
+<li><p>If deemed necessary, create a release notes page. Also, open the PR
+from conda and follow the directions in step 10 in the minor release
+section.</p></li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+
+
+              </div>
+              
+              
+          </main>
+          
+
+      </div>
+    </div>
+  
+  <script src="../_static/js/index.1c5a1a01449ed65a7b51.js"></script>
+
+  
+<script async="" src="https://www.google-analytics.com/analytics.js"></script>
+<script>
+                        window.ga = window.ga || function () {
+                            (ga.q = ga.q || []).push(arguments) };
+                        ga.l = +new Date;
+                        ga('create', 'UA-140243896-1', 'auto');
+                        ga('set', 'anonymizeIp', true);
+                        ga('send', 'pageview');
+                    </script>
+<footer class="footer mt-5 mt-md-0">
+  <div class="container">
+    
+    <div class="footer-item">
+      <p class="copyright">
+    &copy; Copyright 2017-2021, The PyVista Developers.<br/>
+</p>
+    </div>
+    
+    <div class="footer-item">
+      <p class="sphinx-version">
+Created using <a href="http://sphinx-doc.org/">Sphinx</a> 4.1.1.<br/>
+</p>
+    </div>
+    
+  </div>
+</footer>
+  </body>
+</html>

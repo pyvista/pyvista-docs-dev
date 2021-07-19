@@ -1,0 +1,6 @@
+slice\_along\_axis
+==================
+
+.. currentmodule:: pyvista
+
+.. automethod:: UniformGridFilters.slice_along_axis

@@ -1,0 +1,6 @@
+clip
+====
+
+.. currentmodule:: pyvista
+
+.. automethod:: UnstructuredGridFilters.clip

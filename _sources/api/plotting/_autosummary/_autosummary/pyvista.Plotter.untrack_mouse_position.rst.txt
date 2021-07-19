@@ -1,0 +1,6 @@
+untrack\_mouse\_position
+========================
+
+.. currentmodule:: pyvista
+
+.. automethod:: Plotter.untrack_mouse_position

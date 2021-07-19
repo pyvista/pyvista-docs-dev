@@ -1,0 +1,6 @@
+select\_enclosed\_points
+========================
+
+.. currentmodule:: pyvista
+
+.. automethod:: DataSetFilters.select_enclosed_points

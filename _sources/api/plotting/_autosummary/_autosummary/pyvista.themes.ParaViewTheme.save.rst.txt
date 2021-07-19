@@ -1,0 +1,6 @@
+save
+====
+
+.. currentmodule:: pyvista.themes
+
+.. automethod:: ParaViewTheme.save

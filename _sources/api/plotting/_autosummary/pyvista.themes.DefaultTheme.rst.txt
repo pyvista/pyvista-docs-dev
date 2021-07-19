@@ -1,0 +1,151 @@
+﻿pyvista.themes.DefaultTheme
+===========================
+
+.. currentmodule:: pyvista.themes
+
+.. autoclass:: DefaultTheme
+
+   
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :toctree: _autosummary
+   
+      
+      
+      DefaultTheme.from_dict
+      
+      
+      DefaultTheme.load_theme
+      
+      
+      DefaultTheme.restore_defaults
+      
+      
+      DefaultTheme.save
+      
+      
+      DefaultTheme.to_dict
+      
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+      :toctree: _autosummary
+   
+      
+      DefaultTheme.auto_close
+      
+      
+      DefaultTheme.axes
+      
+      
+      DefaultTheme.background
+      
+      
+      DefaultTheme.camera
+      
+      
+      DefaultTheme.cmap
+      
+      
+      DefaultTheme.color
+      
+      
+      DefaultTheme.colorbar_horizontal
+      
+      
+      DefaultTheme.colorbar_orientation
+      
+      
+      DefaultTheme.colorbar_vertical
+      
+      
+      DefaultTheme.depth_peeling
+      
+      
+      DefaultTheme.edge_color
+      
+      
+      DefaultTheme.floor_color
+      
+      
+      DefaultTheme.font
+      
+      
+      DefaultTheme.full_screen
+      
+      
+      DefaultTheme.hidden_line_removal
+      
+      
+      DefaultTheme.interactive
+      
+      
+      DefaultTheme.jupyter_backend
+      
+      
+      DefaultTheme.lighting
+      
+      
+      DefaultTheme.multi_rendering_splitting_position
+      
+      
+      DefaultTheme.multi_samples
+      
+      
+      DefaultTheme.name
+      
+      
+      DefaultTheme.nan_color
+      
+      
+      DefaultTheme.notebook
+      
+      
+      DefaultTheme.outline_color
+      
+      
+      DefaultTheme.render_points_as_spheres
+      
+      
+      DefaultTheme.return_cpos
+      
+      
+      DefaultTheme.show_edges
+      
+      
+      DefaultTheme.show_scalar_bar
+      
+      
+      DefaultTheme.silhouette
+      
+      
+      DefaultTheme.slider_styles
+      
+      
+      DefaultTheme.smooth_shading
+      
+      
+      DefaultTheme.title
+      
+      
+      DefaultTheme.transparent_background
+      
+      
+      DefaultTheme.use_ipyvtk
+      
+      
+      DefaultTheme.volume_mapper
+      
+      
+      DefaultTheme.window_size
+      
+   
+   

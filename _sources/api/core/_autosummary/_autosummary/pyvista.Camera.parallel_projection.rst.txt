@@ -1,0 +1,6 @@
+parallel\_projection
+====================
+
+.. currentmodule:: pyvista
+
+.. autoproperty:: Camera.parallel_projection

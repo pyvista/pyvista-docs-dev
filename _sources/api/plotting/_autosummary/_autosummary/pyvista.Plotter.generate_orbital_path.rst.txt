@@ -1,0 +1,6 @@
+generate\_orbital\_path
+=======================
+
+.. currentmodule:: pyvista
+
+.. automethod:: Plotter.generate_orbital_path

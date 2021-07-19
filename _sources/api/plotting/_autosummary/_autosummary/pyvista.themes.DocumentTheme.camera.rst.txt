@@ -1,0 +1,6 @@
+camera
+======
+
+.. currentmodule:: pyvista.themes
+
+.. autoproperty:: DocumentTheme.camera

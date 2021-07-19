@@ -1,0 +1,40 @@
+﻿pyvista.themes.\_SliderConfig
+=============================
+
+.. currentmodule:: pyvista.themes
+
+.. autoclass:: _SliderConfig
+
+   
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :toctree: _autosummary
+   
+      
+      
+      _SliderConfig.from_dict
+      
+      
+      _SliderConfig.to_dict
+      
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+      :toctree: _autosummary
+   
+      
+      _SliderConfig.classic
+      
+      
+      _SliderConfig.modern
+      
+   
+   

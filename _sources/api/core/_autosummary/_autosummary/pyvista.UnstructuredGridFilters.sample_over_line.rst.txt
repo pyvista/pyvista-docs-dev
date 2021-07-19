@@ -1,0 +1,6 @@
+sample\_over\_line
+==================
+
+.. currentmodule:: pyvista
+
+.. automethod:: UnstructuredGridFilters.sample_over_line

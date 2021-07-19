@@ -1,0 +1,6 @@
+extrude\_rotate
+===============
+
+.. currentmodule:: pyvista
+
+.. automethod:: PolyDataFilters.extrude_rotate

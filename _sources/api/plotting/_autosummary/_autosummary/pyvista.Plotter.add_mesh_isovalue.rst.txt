@@ -1,0 +1,6 @@
+add\_mesh\_isovalue
+===================
+
+.. currentmodule:: pyvista
+
+.. automethod:: Plotter.add_mesh_isovalue

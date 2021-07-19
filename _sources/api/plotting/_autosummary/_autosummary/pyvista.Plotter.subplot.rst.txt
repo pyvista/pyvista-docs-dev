@@ -1,0 +1,6 @@
+subplot
+=======
+
+.. currentmodule:: pyvista
+
+.. automethod:: Plotter.subplot

@@ -1,0 +1,6 @@
+enable\_parallel\_projection
+============================
+
+.. currentmodule:: pyvista
+
+.. automethod:: Plotter.enable_parallel_projection

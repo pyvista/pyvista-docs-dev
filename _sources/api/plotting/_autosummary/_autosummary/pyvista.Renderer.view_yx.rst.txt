@@ -1,0 +1,6 @@
+view\_yx
+========
+
+.. currentmodule:: pyvista
+
+.. automethod:: Renderer.view_yx

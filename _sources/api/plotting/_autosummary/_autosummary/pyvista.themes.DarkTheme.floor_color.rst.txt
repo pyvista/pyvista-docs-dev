@@ -1,0 +1,6 @@
+floor\_color
+============
+
+.. currentmodule:: pyvista.themes
+
+.. autoproperty:: DarkTheme.floor_color

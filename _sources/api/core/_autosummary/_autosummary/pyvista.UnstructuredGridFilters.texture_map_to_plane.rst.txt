@@ -1,0 +1,6 @@
+texture\_map\_to\_plane
+=======================
+
+.. currentmodule:: pyvista
+
+.. automethod:: UnstructuredGridFilters.texture_map_to_plane

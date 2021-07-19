@@ -1,0 +1,6 @@
+﻿CylinderStructured
+==================
+
+.. currentmodule:: pyvista
+
+.. autofunction:: CylinderStructured

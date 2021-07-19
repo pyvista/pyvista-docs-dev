@@ -1,0 +1,6 @@
+add\_mesh
+=========
+
+.. currentmodule:: pyvista
+
+.. automethod:: Plotter.add_mesh

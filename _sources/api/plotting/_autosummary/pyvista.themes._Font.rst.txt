@@ -1,0 +1,52 @@
+﻿pyvista.themes.\_Font
+=====================
+
+.. currentmodule:: pyvista.themes
+
+.. autoclass:: _Font
+
+   
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :toctree: _autosummary
+   
+      
+      
+      _Font.from_dict
+      
+      
+      _Font.to_dict
+      
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+      :toctree: _autosummary
+   
+      
+      _Font.color
+      
+      
+      _Font.family
+      
+      
+      _Font.fmt
+      
+      
+      _Font.label_size
+      
+      
+      _Font.size
+      
+      
+      _Font.title_size
+      
+   
+   

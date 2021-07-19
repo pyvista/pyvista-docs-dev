@@ -1,0 +1,6 @@
+width
+=====
+
+.. currentmodule:: pyvista.themes
+
+.. autoproperty:: _ColorbarConfig.width

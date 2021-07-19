@@ -1,0 +1,196 @@
+﻿pyvista.DataSetFilters
+======================
+
+.. currentmodule:: pyvista
+
+.. autoclass:: DataSetFilters
+
+   
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :toctree: _autosummary
+   
+      
+      
+      DataSetFilters.cell_centers
+      
+      
+      DataSetFilters.cell_data_to_point_data
+      
+      
+      DataSetFilters.clip
+      
+      
+      DataSetFilters.clip_box
+      
+      
+      DataSetFilters.clip_scalar
+      
+      
+      DataSetFilters.clip_surface
+      
+      
+      DataSetFilters.compute_cell_quality
+      
+      
+      DataSetFilters.compute_cell_sizes
+      
+      
+      DataSetFilters.compute_derivative
+      
+      
+      DataSetFilters.compute_implicit_distance
+      
+      
+      DataSetFilters.connectivity
+      
+      
+      DataSetFilters.contour
+      
+      
+      DataSetFilters.ctp
+      
+      
+      DataSetFilters.decimate_boundary
+      
+      
+      DataSetFilters.delaunay_3d
+      
+      
+      DataSetFilters.elevation
+      
+      
+      DataSetFilters.extract_all_edges
+      
+      
+      DataSetFilters.extract_cells
+      
+      
+      DataSetFilters.extract_feature_edges
+      
+      
+      DataSetFilters.extract_geometry
+      
+      
+      DataSetFilters.extract_largest
+      
+      
+      DataSetFilters.extract_points
+      
+      
+      DataSetFilters.extract_surface
+      
+      
+      DataSetFilters.glyph
+      
+      
+      DataSetFilters.interpolate
+      
+      
+      DataSetFilters.merge
+      
+      
+      DataSetFilters.outline
+      
+      
+      DataSetFilters.outline_corners
+      
+      
+      DataSetFilters.plot_over_circular_arc
+      
+      
+      DataSetFilters.plot_over_circular_arc_normal
+      
+      
+      DataSetFilters.plot_over_line
+      
+      
+      DataSetFilters.point_data_to_cell_data
+      
+      
+      DataSetFilters.probe
+      
+      
+      DataSetFilters.ptc
+      
+      
+      DataSetFilters.reflect
+      
+      
+      DataSetFilters.sample
+      
+      
+      DataSetFilters.sample_over_circular_arc
+      
+      
+      DataSetFilters.sample_over_circular_arc_normal
+      
+      
+      DataSetFilters.sample_over_line
+      
+      
+      DataSetFilters.select_enclosed_points
+      
+      
+      DataSetFilters.shrink
+      
+      
+      DataSetFilters.slice
+      
+      
+      DataSetFilters.slice_along_axis
+      
+      
+      DataSetFilters.slice_along_line
+      
+      
+      DataSetFilters.slice_orthogonal
+      
+      
+      DataSetFilters.split_bodies
+      
+      
+      DataSetFilters.streamlines
+      
+      
+      DataSetFilters.streamlines_evenly_spaced_2D
+      
+      
+      DataSetFilters.streamlines_from_source
+      
+      
+      DataSetFilters.surface_indices
+      
+      
+      DataSetFilters.texture_map_to_plane
+      
+      
+      DataSetFilters.texture_map_to_sphere
+      
+      
+      DataSetFilters.threshold
+      
+      
+      DataSetFilters.threshold_percent
+      
+      
+      DataSetFilters.transform
+      
+      
+      DataSetFilters.triangulate
+      
+      
+      DataSetFilters.warp_by_scalar
+      
+      
+      DataSetFilters.warp_by_vector
+      
+   
+   
+
+   
+   
+   

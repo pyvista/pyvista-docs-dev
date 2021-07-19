@@ -1,0 +1,6 @@
+decimate\_boundary
+==================
+
+.. currentmodule:: pyvista
+
+.. automethod:: PolyDataFilters.decimate_boundary

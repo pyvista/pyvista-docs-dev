@@ -1,0 +1,6 @@
+export\_gltf
+============
+
+.. currentmodule:: pyvista
+
+.. automethod:: Plotter.export_gltf

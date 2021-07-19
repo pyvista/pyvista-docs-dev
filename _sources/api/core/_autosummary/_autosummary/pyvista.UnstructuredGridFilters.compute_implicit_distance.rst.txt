@@ -1,0 +1,6 @@
+compute\_implicit\_distance
+===========================
+
+.. currentmodule:: pyvista
+
+.. automethod:: UnstructuredGridFilters.compute_implicit_distance

@@ -1,0 +1,6 @@
+add\_spline\_widget
+===================
+
+.. currentmodule:: pyvista
+
+.. automethod:: Plotter.add_spline_widget

@@ -1,0 +1,6 @@
+surface\_indices
+================
+
+.. currentmodule:: pyvista
+
+.. automethod:: UniformGridFilters.surface_indices

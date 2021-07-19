@@ -1,0 +1,6 @@
+shape
+=====
+
+.. currentmodule:: pyvista
+
+.. autoproperty:: Plotter.shape

@@ -1,0 +1,6 @@
+enabled
+=======
+
+.. currentmodule:: pyvista.themes
+
+.. autoproperty:: _DepthPeelingConfig.enabled

@@ -1,0 +1,6 @@
+export\_obj
+===========
+
+.. currentmodule:: pyvista
+
+.. automethod:: Plotter.export_obj

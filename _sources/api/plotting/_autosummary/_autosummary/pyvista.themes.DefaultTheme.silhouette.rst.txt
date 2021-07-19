@@ -1,0 +1,6 @@
+silhouette
+==========
+
+.. currentmodule:: pyvista.themes
+
+.. autoproperty:: DefaultTheme.silhouette

@@ -1,0 +1,6 @@
+is\_scene\_light
+================
+
+.. currentmodule:: pyvista
+
+.. autoproperty:: Light.is_scene_light

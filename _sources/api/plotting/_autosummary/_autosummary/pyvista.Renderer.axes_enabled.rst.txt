@@ -1,0 +1,6 @@
+axes\_enabled
+=============
+
+.. currentmodule:: pyvista
+
+.. autoproperty:: Renderer.axes_enabled

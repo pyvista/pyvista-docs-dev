@@ -1,0 +1,6 @@
+add\_light
+==========
+
+.. currentmodule:: pyvista
+
+.. automethod:: Renderer.add_light

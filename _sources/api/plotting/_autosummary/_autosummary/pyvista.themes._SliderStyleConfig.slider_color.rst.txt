@@ -1,0 +1,6 @@
+slider\_color
+=============
+
+.. currentmodule:: pyvista.themes
+
+.. autoproperty:: _SliderStyleConfig.slider_color

@@ -1,0 +1,6 @@
+hidden\_line\_removal
+=====================
+
+.. currentmodule:: pyvista.themes
+
+.. autoproperty:: ParaViewTheme.hidden_line_removal

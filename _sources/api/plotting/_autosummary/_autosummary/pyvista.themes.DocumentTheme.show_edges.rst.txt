@@ -1,0 +1,6 @@
+show\_edges
+===========
+
+.. currentmodule:: pyvista.themes
+
+.. autoproperty:: DocumentTheme.show_edges

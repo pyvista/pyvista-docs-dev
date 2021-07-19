@@ -1,0 +1,6 @@
+size
+====
+
+.. currentmodule:: pyvista.themes
+
+.. autoproperty:: _Font.size

@@ -1,0 +1,6 @@
+add\_point\_scalar\_labels
+==========================
+
+.. currentmodule:: pyvista
+
+.. automethod:: Plotter.add_point_scalar_labels

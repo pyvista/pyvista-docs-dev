@@ -1,0 +1,6 @@
+add\_orientation\_widget
+========================
+
+.. currentmodule:: pyvista
+
+.. automethod:: Plotter.add_orientation_widget

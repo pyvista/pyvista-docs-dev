@@ -1,0 +1,507 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Getting Started &#8212; PyVista 0.31.dev0 documentation</title>
+    
+  <link href="../_static/css/theme.css" rel="stylesheet" />
+  <link href="../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/basic.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/jupyter-sphinx.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/thebelab.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/gallery.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/gallery-binder.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/gallery-dataframe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/gallery-rendered-html.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../_static/js/index.1c5a1a01449ed65a7b51.js">
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script src="../_static/thebelab-helper.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.20.0/dist/embed-amd.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Why PyVista?" href="why.html" />
+    <link rel="prev" title="Brief Examples" href="../index.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en" />
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+    <nav class="navbar navbar-light navbar-expand-lg bg-light fixed-top bd-navbar" id="navbar-main"><div class="container-xl">
+
+  <div id="navbar-start">
+    
+    
+
+<a class="navbar-brand" href="../index.html">
+  <img src="../_static/pyvista_logo_sm.png" class="logo" alt="logo">
+</a>
+
+
+    
+  </div>
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-collapsible" aria-controls="navbar-collapsible" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  
+  <div id="navbar-collapsible" class="col-lg-9 collapse navbar-collapse">
+    <div id="navbar-center" class="mr-auto">
+      
+      <div class="navbar-center-item">
+        <ul id="navbar-main-elements" class="navbar-nav">
+    <li class="toctree-l1 current active nav-item">
+ <a class="current reference internal nav-link" href="#">
+  Getting Started
+ </a>
+</li>
+
+<li class="toctree-l1 nav-item">
+ <a class="reference internal nav-link" href="../user-guide/index.html">
+  User Guide
+ </a>
+</li>
+
+<li class="toctree-l1 nav-item">
+ <a class="reference internal nav-link" href="../examples/index.html">
+  Examples
+ </a>
+</li>
+
+<li class="toctree-l1 nav-item">
+ <a class="reference internal nav-link" href="../api/index.html">
+  API Reference
+ </a>
+</li>
+
+<li class="toctree-l1 nav-item">
+ <a class="reference internal nav-link" href="../extras/index.html">
+  Extras
+ </a>
+</li>
+
+    
+</ul>
+      </div>
+      
+    </div>
+
+    <div id="navbar-end">
+      
+      <div class="navbar-end-item">
+        <ul id="navbar-icon-links" class="navbar-nav" aria-label="Icon Links">
+        <li class="nav-item">
+          <a class="nav-link" href="https://github.com/pyvista/pyvista" rel="noopener" target="_blank" title="GitHub">
+            <span><i class="fab fa-github-square"></i></span>
+            <label class="sr-only">GitHub</label>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="http://slack.pyvista.org" rel="noopener" target="_blank" title="Slack Community">
+            <span><i class="fab fa-slack"></i></span>
+            <label class="sr-only">Slack Community</label>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://github.com/pyvista/pyvista/discussions" rel="noopener" target="_blank" title="Support">
+            <span><i class="fa fa-comment fa-fw"></i></span>
+            <label class="sr-only">Support</label>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://github.com/pyvista/pyvista/blob/main/CONTRIBUTING.md" rel="noopener" target="_blank" title="Contributing">
+            <span><i class="fa fa-gavel fa-fw"></i></span>
+            <label class="sr-only">Contributing</label>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://doi.org/10.21105/joss.01450" rel="noopener" target="_blank" title="The Paper">
+            <span><i class="fa fa-file-text fa-fw"></i></span>
+            <label class="sr-only">The Paper</label>
+          </a>
+        </li>
+      </ul>
+      </div>
+      
+    </div>
+  </div>
+</div>
+    </nav>
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+            
+            <!-- Only show if we have sidebars configured, else just a small margin  -->
+            <div class="col-12 col-md-3 bd-sidebar"><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search the docs ..." aria-label="Search the docs ..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+  <div class="bd-toc-item active">
+    <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="why.html">
+   Why PyVista?
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="authors.html">
+   Authors &amp; Citation
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="installation.html">
+   Installation
+  </a>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="external_examples.html">
+   External Examples
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference external" href="https://jacobbumgarner.github.io/VesselVio/">
+     VesselVio
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference external" href="https://dennissergeev.github.io/exoconvection-apj-2020/">
+     Atmospheric Convection
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference external" href="https://nbviewer.jupyter.org/github/banesullivan/damavand-volcano/blob/master/Damavand_Volcano.ipynb">
+     Damavand Volcano
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference external" href="https://www.youtube.com/watch?v=cCPjnF_vHxw&amp;feature=youtu.be">
+     Anvil Cirrus Plumes
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference external" href="https://gist.github.com/hichamjanati/6668d91848283c31ac18d801552fb582">
+     Optimization visualization with PyVista
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference external" href="https://github.com/johnjarmitage/flem">
+     FLEM: A diffusive landscape evolution model
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference external" href="https://github.com/BartheG/Orvisu">
+     Orvisu Demo Application
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference external" href="http://pymeshfix.pyvista.org/examples/index.html">
+     PyMeshFix's example gallery
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference external" href="http://tetgen.pyvista.org/examples/index.html">
+     TetGen's example gallery
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference external" href="https://pvgeo.org/examples/index.html">
+     PVGeo's example gallery
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference external" href="https://forge.pvgeo.org/project/index.html">
+     FORGE Geothermal Project
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference external" href="https://peterdsharpe.github.io/AeroSandbox/">
+     AeroSandbox
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference external" href="https://pswpswpsw.github.io/posts/2018/09/blog-post-modify-vtk-openfoam/">
+     OpenFOAM Rendering
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference external" href="http://discretize.simpeg.xyz/en/master/examples/plot_pyvista_laguna.html">
+     3D Rendering with Discretize
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference external" href="https://opengeovis.github.io/omfvista/examples/index.html">
+     3D visualization for the Open Mining Format (omf)
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+  </div>
+</nav>
+            </div>
+            
+          
+
+          
+          <div class="d-none d-xl-block col-xl-2 bd-toc">
+            
+              
+              <div class="toc-item">
+                
+<div class="tocsection onthispage pt-5 pb-3">
+    <i class="fas fa-list"></i> On this page
+</div>
+
+<nav id="bd-toc-nav">
+    <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#installation">
+   Installation
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#support">
+   Support
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#connections">
+   Connections
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#citing-pyvista">
+   Citing PyVista
+  </a>
+ </li>
+</ul>
+
+</nav>
+              </div>
+              
+              <div class="toc-item">
+                
+              </div>
+              
+            
+          </div>
+          
+
+          
+          
+            
+          
+          <main class="col-12 col-md-9 col-xl-7 py-md-5 pl-md-5 pr-md-4 bd-content" role="main">
+              
+              <div>
+                
+  <div class="section" id="getting-started">
+<h1>Getting Started<a class="headerlink" href="#getting-started" title="Permalink to this headline">¶</a></h1>
+<div class="toctree-wrapper compound">
+</div>
+<div class="sphinx-bs container pb-4 docutils">
+<div class="row docutils">
+<div class="d-flex col-lg-6 col-md-6 col-sm-12 col-xs-12 p-3 docutils">
+<div class="card w-100 shadow docutils">
+<div class="card-header docutils">
+<p class="card-text">Why PyVista?</p>
+</div>
+<div class="card-body docutils">
+<p class="card-text"><a class="sphinx-bs btn text-wrap btn-outline-primary btn-block stretched-link reference internal" href="why.html"><span class="doc">Why PyVista?</span></a></p>
+<p class="card-text">Learn more about why we created PyVista as an interface to the
+Visualization Toolkit (VTK).</p>
+</div>
+</div>
+</div>
+<div class="d-flex col-lg-6 col-md-6 col-sm-12 col-xs-12 p-3 docutils">
+<div class="card w-100 shadow docutils">
+<div class="card-header docutils">
+<p class="card-text">Authors &amp; Citation</p>
+</div>
+<div class="card-body docutils">
+<p class="card-text"><a class="sphinx-bs btn text-wrap btn-outline-primary btn-block stretched-link reference internal" href="authors.html"><span class="doc">Authors &amp; Citation</span></a></p>
+<p class="card-text">Using PyVista in your research? Please consider citing or acknowledging us.</p>
+</div>
+</div>
+</div>
+<div class="d-flex col-12 p-3 docutils">
+<div class="card w-100 shadow docutils">
+<div class="card-header docutils">
+<p class="card-text">See PyVista in External Efforts</p>
+</div>
+<div class="card-body docutils">
+<p class="card-text"><a class="sphinx-bs btn text-wrap btn-outline-primary btn-block stretched-link reference internal" href="external_examples.html"><span class="doc">Learn more</span></a></p>
+<p class="card-text">Take a look at third party projects using PyVista</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="installation">
+<h2>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h2>
+<div class="sphinx-bs container pb-4 docutils">
+<div class="row docutils">
+<div class="d-flex col-lg-6 col-md-6 col-sm-12 col-xs-12 p-3 docutils">
+<div class="card w-100 shadow install-card docutils">
+<div class="card-header docutils">
+<p class="card-text">Working with conda?</p>
+</div>
+<div class="card-body docutils">
+<p class="card-text">PyVista is available on <a class="reference external" href="https://anaconda.org/conda-forge/pyvista">conda-forge</a></p>
+</div>
+<div class="card-footer docutils">
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>conda install -c conda-forge pyvista
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="d-flex col-lg-6 col-md-6 col-sm-12 col-xs-12 p-3 docutils">
+<div class="card w-100 shadow install-card docutils">
+<div class="card-header docutils">
+<p class="card-text">Prefer pip?</p>
+</div>
+<div class="card-body docutils">
+<p class="card-text">PyVista can be installed via pip from <a class="reference external" href="https://pypi.org/project/pyvista">PyPI</a>.</p>
+</div>
+<div class="card-footer docutils">
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pip install pyvista
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="d-flex col-12 p-3 docutils">
+<div class="card w-100 shadow install-card docutils">
+<div class="card-header docutils">
+<p class="card-text">In-depth instructions?</p>
+</div>
+<div class="card-body docutils">
+<p class="card-text">Installing a specific version? Installing from source? Check the advanced
+installation page.</p>
+<p class="card-text"><a class="sphinx-bs btn text-wrap btn-outline-primary btn-block stretched-link reference internal" href="installation.html"><span class="doc">Installing PyVista</span></a></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="support">
+<h2>Support<a class="headerlink" href="#support" title="Permalink to this headline">¶</a></h2>
+<p>For general questions about the project, its applications, or about software
+usage, please create a discussion in <a class="reference external" href="https://github.com/pyvista/pyvista/discussions">pyvista/discussions</a>
+where the community can collectively address your questions. You are also
+welcome to join us on <a class="reference external" href="http://slack.pyvista.org">Slack</a> or send one of the developers an email.
+The project support team can be reached at <a class="reference external" href="mailto:info&#37;&#52;&#48;pyvista&#46;org">info<span>&#64;</span>pyvista<span>&#46;</span>org</a>.</p>
+</div>
+<div class="section" id="connections">
+<h2>Connections<a class="headerlink" href="#connections" title="Permalink to this headline">¶</a></h2>
+<p>PyVista is a powerful tool that researchers can harness to create compelling,
+integrated visualizations of large datasets in an intuitive, Pythonic manner.
+Here are a few open-source projects that leverage PyVista:</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/OpenGeoVis/PVGeo">PVGeo</a>: Python package of VTK-based algorithms to analyze geoscientific data and models. PyVista is used to make the inputs and outputs of PVGeo’s algorithms more accessible.</p></li>
+<li><p><a class="reference external" href="https://discretize.simpeg.xyz/en/main/">discretize</a>: Discretization tools for finite volume and inverse problems. <code class="docutils literal notranslate"><span class="pre">discretize</span></code> provides <code class="docutils literal notranslate"><span class="pre">toVTK</span></code> methods that return PyVista versions of their data types for <a class="reference external" href="https://discretize.simpeg.xyz/en/main/api/generated/discretize.mixins.vtk_mod.InterfaceVTK.html">creating compelling visualizations</a>.</p></li>
+<li><p><a class="reference external" href="https://github.com/cgre-aachen/gemgis">gemgis</a>: Spatial data processing for geomodeling.</p></li>
+<li><p><a class="reference external" href="https://github.com/gimli-org/gimli">gimly</a>: Geophysical inversion and modeling library.</p></li>
+<li><p><a class="reference external" href="https://github.com/InsightSoftwareConsortium/itkwidgets">itkwidgets</a>: Interactive Jupyter widgets to visualize images, point sets, and meshes in 2D and 3D. Supports all PyVista mesh types.</p></li>
+<li><p><a class="reference external" href="https://github.com/mne-tools/mne-python">mne-python</a>: MNE: Magnetoencephalography (MEG) and Electroencephalography (EEG) in Python.</p></li>
+<li><p><a class="reference external" href="https://github.com/OpenGeoVis/omfvista">omfvista</a>: 3D visualization for the Open Mining Format (omf). PyVista provides the foundation for this library’s visualization.</p></li>
+<li><p><a class="reference external" href="https://github.com/Eomys/pyleecan">pyleecan</a>: Electrical engineering open-source software providing a user-friendly, unified, flexible simulation framework for the multiphysic design and optimization of electrical machines and drives</p></li>
+<li><p><a class="reference external" href="https://github.com/pyansys/pymapdl">pymapdl</a>: Pythonic interface to Ansys MAPDL.</p></li>
+<li><p><a class="reference external" href="https://github.com/pyvista/pymeshfix">pymeshfix</a>: Python/Cython wrapper of Marco Attene’s wonderful, award-winning <a class="reference external" href="https://github.com/MarcoAttene/MeshFix-V2.1">MeshFix</a> software.</p></li>
+<li><p><a class="reference external" href="https://github.com/romerogroup/pyprocar">pyprocar</a>: A Python library for electronic structure pre/post-processing.</p></li>
+<li><p><a class="reference external" href="https://github.com/pyvista/tetgen">tetgen</a>: Python Interface to Hang Si’s C++ TetGen Library</p></li>
+</ul>
+</div>
+<div class="section" id="citing-pyvista">
+<h2>Citing PyVista<a class="headerlink" href="#citing-pyvista" title="Permalink to this headline">¶</a></h2>
+<p>There is a <a class="reference external" href="https://doi.org/10.21105/joss.01450">paper about PyVista</a>!</p>
+<p>If you are using PyVista in your scientific research, please help our scientific
+visibility by citing our work! Head over to <a class="reference internal" href="authors.html#citation-ref"><span class="std std-ref">Citing PyVista</span></a> to learn more
+about citing PyVista.</p>
+</div>
+</div>
+
+
+              </div>
+              
+              
+          </main>
+          
+
+      </div>
+    </div>
+  
+  <script src="../_static/js/index.1c5a1a01449ed65a7b51.js"></script>
+
+  
+<script async="" src="https://www.google-analytics.com/analytics.js"></script>
+<script>
+                        window.ga = window.ga || function () {
+                            (ga.q = ga.q || []).push(arguments) };
+                        ga.l = +new Date;
+                        ga('create', 'UA-140243896-1', 'auto');
+                        ga('set', 'anonymizeIp', true);
+                        ga('send', 'pageview');
+                    </script>
+<footer class="footer mt-5 mt-md-0">
+  <div class="container">
+    
+    <div class="footer-item">
+      <p class="copyright">
+    &copy; Copyright 2017-2021, The PyVista Developers.<br/>
+</p>
+    </div>
+    
+    <div class="footer-item">
+      <p class="sphinx-version">
+Created using <a href="http://sphinx-doc.org/">Sphinx</a> 4.1.1.<br/>
+</p>
+    </div>
+    
+  </div>
+</footer>
+  </body>
+</html>

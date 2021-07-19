@@ -1,0 +1,6 @@
+add\_line\_widget
+=================
+
+.. currentmodule:: pyvista
+
+.. automethod:: Plotter.add_line_widget

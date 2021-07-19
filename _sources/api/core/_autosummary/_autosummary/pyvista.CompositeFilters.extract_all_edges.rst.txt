@@ -1,0 +1,6 @@
+extract\_all\_edges
+===================
+
+.. currentmodule:: pyvista
+
+.. automethod:: CompositeFilters.extract_all_edges

@@ -1,0 +1,6 @@
+enable\_image\_style
+====================
+
+.. currentmodule:: pyvista
+
+.. automethod:: Plotter.enable_image_style

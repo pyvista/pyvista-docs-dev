@@ -1,0 +1,6 @@
+﻿ParametricBohemianDome
+======================
+
+.. currentmodule:: pyvista
+
+.. autofunction:: ParametricBohemianDome

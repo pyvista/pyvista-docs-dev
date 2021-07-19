@@ -1,0 +1,6 @@
+﻿ParametricBour
+==============
+
+.. currentmodule:: pyvista
+
+.. autofunction:: ParametricBour

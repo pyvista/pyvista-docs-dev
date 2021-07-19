@@ -1,0 +1,6 @@
+slice\_along\_line
+==================
+
+.. currentmodule:: pyvista
+
+.. automethod:: DataSetFilters.slice_along_line

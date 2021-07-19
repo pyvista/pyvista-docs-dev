@@ -1,0 +1,6 @@
+triangulate
+===========
+
+.. currentmodule:: pyvista
+
+.. automethod:: PolyDataFilters.triangulate

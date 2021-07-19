@@ -1,0 +1,6 @@
+﻿set\_error\_output\_file
+========================
+
+.. currentmodule:: pyvista.utilities
+
+.. autofunction:: set_error_output_file

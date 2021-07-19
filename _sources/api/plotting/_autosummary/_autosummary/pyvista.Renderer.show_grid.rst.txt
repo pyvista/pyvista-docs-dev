@@ -1,0 +1,6 @@
+show\_grid
+==========
+
+.. currentmodule:: pyvista
+
+.. automethod:: Renderer.show_grid

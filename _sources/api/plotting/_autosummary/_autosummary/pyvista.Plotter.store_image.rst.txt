@@ -1,0 +1,6 @@
+store\_image
+============
+
+.. currentmodule:: pyvista
+
+.. autoproperty:: Plotter.store_image

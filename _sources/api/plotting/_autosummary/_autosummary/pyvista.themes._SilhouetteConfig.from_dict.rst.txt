@@ -1,0 +1,6 @@
+from\_dict
+==========
+
+.. currentmodule:: pyvista.themes
+
+.. automethod:: _SilhouetteConfig.from_dict

@@ -1,0 +1,6 @@
+clear\_plane\_widgets
+=====================
+
+.. currentmodule:: pyvista
+
+.. automethod:: WidgetHelper.clear_plane_widgets

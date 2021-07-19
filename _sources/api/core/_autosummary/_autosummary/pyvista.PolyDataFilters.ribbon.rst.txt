@@ -1,0 +1,6 @@
+ribbon
+======
+
+.. currentmodule:: pyvista
+
+.. automethod:: PolyDataFilters.ribbon

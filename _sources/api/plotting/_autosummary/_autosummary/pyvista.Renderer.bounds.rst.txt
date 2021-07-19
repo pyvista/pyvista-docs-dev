@@ -1,0 +1,6 @@
+bounds
+======
+
+.. currentmodule:: pyvista
+
+.. autoproperty:: Renderer.bounds

@@ -1,0 +1,6 @@
+clear\_events\_for\_key
+=======================
+
+.. currentmodule:: pyvista
+
+.. automethod:: Plotter.clear_events_for_key

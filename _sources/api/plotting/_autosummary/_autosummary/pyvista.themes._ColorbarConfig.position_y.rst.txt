@@ -1,0 +1,6 @@
+position\_y
+===========
+
+.. currentmodule:: pyvista.themes
+
+.. autoproperty:: _ColorbarConfig.position_y

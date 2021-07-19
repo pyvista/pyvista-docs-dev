@@ -1,0 +1,6 @@
+enable\_eye\_dome\_lighting
+===========================
+
+.. currentmodule:: pyvista
+
+.. automethod:: Renderer.enable_eye_dome_lighting

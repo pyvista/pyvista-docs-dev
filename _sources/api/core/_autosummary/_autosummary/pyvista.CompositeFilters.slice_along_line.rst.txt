@@ -1,0 +1,6 @@
+slice\_along\_line
+==================
+
+.. currentmodule:: pyvista
+
+.. automethod:: CompositeFilters.slice_along_line

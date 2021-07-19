@@ -1,0 +1,6 @@
+show\_axes
+==========
+
+.. currentmodule:: pyvista
+
+.. automethod:: Renderer.show_axes

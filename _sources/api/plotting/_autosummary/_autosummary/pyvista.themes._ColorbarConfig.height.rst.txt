@@ -1,0 +1,6 @@
+height
+======
+
+.. currentmodule:: pyvista.themes
+
+.. autoproperty:: _ColorbarConfig.height

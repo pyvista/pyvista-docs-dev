@@ -1,0 +1,6 @@
+probe
+=====
+
+.. currentmodule:: pyvista
+
+.. automethod:: UnstructuredGridFilters.probe

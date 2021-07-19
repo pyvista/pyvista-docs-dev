@@ -1,0 +1,6 @@
+restore\_defaults
+=================
+
+.. currentmodule:: pyvista.themes
+
+.. automethod:: ParaViewTheme.restore_defaults

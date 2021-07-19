@@ -1,0 +1,6 @@
+﻿read\_texture
+=============
+
+.. currentmodule:: pyvista
+
+.. autofunction:: read_texture

@@ -1,0 +1,6 @@
+get\_image\_depth
+=================
+
+.. currentmodule:: pyvista
+
+.. automethod:: Plotter.get_image_depth

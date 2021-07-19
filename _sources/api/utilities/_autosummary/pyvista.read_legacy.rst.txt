@@ -1,0 +1,6 @@
+﻿read\_legacy
+============
+
+.. currentmodule:: pyvista
+
+.. autofunction:: read_legacy

@@ -1,0 +1,6 @@
+clear\_sphere\_widgets
+======================
+
+.. currentmodule:: pyvista
+
+.. automethod:: WidgetHelper.clear_sphere_widgets

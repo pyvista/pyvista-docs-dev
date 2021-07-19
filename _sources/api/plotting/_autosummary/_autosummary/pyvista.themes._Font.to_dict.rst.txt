@@ -1,0 +1,6 @@
+to\_dict
+========
+
+.. currentmodule:: pyvista.themes
+
+.. automethod:: _Font.to_dict

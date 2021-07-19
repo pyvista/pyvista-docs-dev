@@ -1,0 +1,6 @@
+clear\_button\_widgets
+======================
+
+.. currentmodule:: pyvista
+
+.. automethod:: Plotter.clear_button_widgets

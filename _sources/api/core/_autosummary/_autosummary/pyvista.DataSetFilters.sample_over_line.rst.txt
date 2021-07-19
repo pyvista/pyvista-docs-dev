@@ -1,0 +1,6 @@
+sample\_over\_line
+==================
+
+.. currentmodule:: pyvista
+
+.. automethod:: DataSetFilters.sample_over_line

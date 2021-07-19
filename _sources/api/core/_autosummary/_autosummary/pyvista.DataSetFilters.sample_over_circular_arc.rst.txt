@@ -1,0 +1,6 @@
+sample\_over\_circular\_arc
+===========================
+
+.. currentmodule:: pyvista
+
+.. automethod:: DataSetFilters.sample_over_circular_arc

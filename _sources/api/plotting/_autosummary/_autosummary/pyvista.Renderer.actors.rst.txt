@@ -1,0 +1,6 @@
+actors
+======
+
+.. currentmodule:: pyvista
+
+.. autoproperty:: Renderer.actors

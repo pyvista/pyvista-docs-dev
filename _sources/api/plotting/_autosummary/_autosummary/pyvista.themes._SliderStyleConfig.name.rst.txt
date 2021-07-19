@@ -1,0 +1,6 @@
+name
+====
+
+.. currentmodule:: pyvista.themes
+
+.. autoproperty:: _SliderStyleConfig.name

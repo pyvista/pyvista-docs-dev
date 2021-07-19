@@ -1,0 +1,6 @@
+update\_bounds\_axes
+====================
+
+.. currentmodule:: pyvista
+
+.. automethod:: Plotter.update_bounds_axes

@@ -1,0 +1,6 @@
+thickness
+=========
+
+.. currentmodule:: pyvista
+
+.. autoproperty:: Camera.thickness

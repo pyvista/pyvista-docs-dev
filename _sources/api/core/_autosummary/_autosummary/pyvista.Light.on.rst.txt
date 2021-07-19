@@ -1,0 +1,6 @@
+on
+==
+
+.. currentmodule:: pyvista
+
+.. autoproperty:: Light.on

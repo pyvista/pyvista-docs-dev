@@ -1,0 +1,6 @@
+light\_type
+===========
+
+.. currentmodule:: pyvista
+
+.. autoproperty:: Light.light_type

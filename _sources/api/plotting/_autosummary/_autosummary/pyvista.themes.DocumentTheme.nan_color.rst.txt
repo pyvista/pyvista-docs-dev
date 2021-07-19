@@ -1,0 +1,6 @@
+nan\_color
+==========
+
+.. currentmodule:: pyvista.themes
+
+.. autoproperty:: DocumentTheme.nan_color

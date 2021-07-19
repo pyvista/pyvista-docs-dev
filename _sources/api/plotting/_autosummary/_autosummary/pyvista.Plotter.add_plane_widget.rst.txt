@@ -1,0 +1,6 @@
+add\_plane\_widget
+==================
+
+.. currentmodule:: pyvista
+
+.. automethod:: Plotter.add_plane_widget

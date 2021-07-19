@@ -1,0 +1,6 @@
+enable\_trackball\_style
+========================
+
+.. currentmodule:: pyvista
+
+.. automethod:: Plotter.enable_trackball_style

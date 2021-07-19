@@ -1,0 +1,6 @@
+clip
+====
+
+.. currentmodule:: pyvista
+
+.. automethod:: CompositeFilters.clip

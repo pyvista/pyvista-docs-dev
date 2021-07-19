@@ -1,0 +1,6 @@
+decimate\_pro
+=============
+
+.. currentmodule:: pyvista
+
+.. automethod:: PolyDataFilters.decimate_pro

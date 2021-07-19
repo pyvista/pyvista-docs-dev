@@ -1,0 +1,6 @@
+﻿create\_axes\_orientation\_box
+==============================
+
+.. currentmodule:: pyvista
+
+.. autofunction:: create_axes_orientation_box

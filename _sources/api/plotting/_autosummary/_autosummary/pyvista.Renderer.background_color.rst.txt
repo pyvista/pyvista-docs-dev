@@ -1,0 +1,6 @@
+background\_color
+=================
+
+.. currentmodule:: pyvista
+
+.. autoproperty:: Renderer.background_color

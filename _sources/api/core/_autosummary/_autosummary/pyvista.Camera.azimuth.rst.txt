@@ -1,0 +1,6 @@
+azimuth
+=======
+
+.. currentmodule:: pyvista
+
+.. autoproperty:: Camera.azimuth

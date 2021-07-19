@@ -1,0 +1,6 @@
+﻿CircularArcFromNormal
+=====================
+
+.. currentmodule:: pyvista
+
+.. autofunction:: CircularArcFromNormal

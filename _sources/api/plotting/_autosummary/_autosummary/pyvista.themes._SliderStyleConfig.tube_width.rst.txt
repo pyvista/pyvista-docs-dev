@@ -1,0 +1,6 @@
+tube\_width
+===========
+
+.. currentmodule:: pyvista.themes
+
+.. autoproperty:: _SliderStyleConfig.tube_width

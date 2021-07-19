@@ -1,0 +1,91 @@
+﻿pyvista.WidgetHelper
+====================
+
+.. currentmodule:: pyvista
+
+.. autoclass:: WidgetHelper
+
+   
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :toctree: _autosummary
+   
+      
+      
+      WidgetHelper.add_box_widget
+      
+      
+      WidgetHelper.add_checkbox_button_widget
+      
+      
+      WidgetHelper.add_line_widget
+      
+      
+      WidgetHelper.add_mesh_clip_box
+      
+      
+      WidgetHelper.add_mesh_clip_plane
+      
+      
+      WidgetHelper.add_mesh_isovalue
+      
+      
+      WidgetHelper.add_mesh_slice
+      
+      
+      WidgetHelper.add_mesh_slice_orthogonal
+      
+      
+      WidgetHelper.add_mesh_slice_spline
+      
+      
+      WidgetHelper.add_mesh_threshold
+      
+      
+      WidgetHelper.add_plane_widget
+      
+      
+      WidgetHelper.add_slider_widget
+      
+      
+      WidgetHelper.add_sphere_widget
+      
+      
+      WidgetHelper.add_spline_widget
+      
+      
+      WidgetHelper.add_text_slider_widget
+      
+      
+      WidgetHelper.clear_box_widgets
+      
+      
+      WidgetHelper.clear_button_widgets
+      
+      
+      WidgetHelper.clear_line_widgets
+      
+      
+      WidgetHelper.clear_plane_widgets
+      
+      
+      WidgetHelper.clear_slider_widgets
+      
+      
+      WidgetHelper.clear_sphere_widgets
+      
+      
+      WidgetHelper.clear_spline_widgets
+      
+      
+      WidgetHelper.close
+      
+   
+   
+
+   
+   
+   

@@ -1,0 +1,6 @@
+show\_axes
+==========
+
+.. currentmodule:: pyvista
+
+.. automethod:: Plotter.show_axes

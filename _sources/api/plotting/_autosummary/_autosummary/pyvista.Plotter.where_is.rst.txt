@@ -1,0 +1,6 @@
+where\_is
+=========
+
+.. currentmodule:: pyvista
+
+.. automethod:: Plotter.where_is

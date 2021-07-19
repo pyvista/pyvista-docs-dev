@@ -1,0 +1,6 @@
+parallel\_scale
+===============
+
+.. currentmodule:: pyvista
+
+.. autoproperty:: Plotter.parallel_scale

@@ -1,0 +1,6 @@
+store\_click\_position
+======================
+
+.. currentmodule:: pyvista
+
+.. automethod:: Plotter.store_click_position

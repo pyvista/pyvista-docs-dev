@@ -1,0 +1,6 @@
+delaunay\_2d
+============
+
+.. currentmodule:: pyvista
+
+.. automethod:: UnstructuredGridFilters.delaunay_2d

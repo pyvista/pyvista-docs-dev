@@ -1,0 +1,6 @@
+smooth\_shading
+===============
+
+.. currentmodule:: pyvista.themes
+
+.. autoproperty:: DarkTheme.smooth_shading

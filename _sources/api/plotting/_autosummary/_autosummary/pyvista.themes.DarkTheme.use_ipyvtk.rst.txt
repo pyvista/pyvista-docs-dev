@@ -1,0 +1,6 @@
+use\_ipyvtk
+===========
+
+.. currentmodule:: pyvista.themes
+
+.. autoproperty:: DarkTheme.use_ipyvtk

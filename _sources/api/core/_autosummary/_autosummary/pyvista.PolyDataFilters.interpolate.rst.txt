@@ -1,0 +1,6 @@
+interpolate
+===========
+
+.. currentmodule:: pyvista
+
+.. automethod:: PolyDataFilters.interpolate

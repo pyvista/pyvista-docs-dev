@@ -1,0 +1,6 @@
+modern
+======
+
+.. currentmodule:: pyvista.themes
+
+.. autoproperty:: _SliderConfig.modern

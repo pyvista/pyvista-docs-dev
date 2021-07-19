@@ -1,0 +1,6 @@
+add\_floor
+==========
+
+.. currentmodule:: pyvista
+
+.. automethod:: Plotter.add_floor

@@ -1,0 +1,6 @@
+use\_ipyvtk
+===========
+
+.. currentmodule:: pyvista.themes
+
+.. autoproperty:: ParaViewTheme.use_ipyvtk

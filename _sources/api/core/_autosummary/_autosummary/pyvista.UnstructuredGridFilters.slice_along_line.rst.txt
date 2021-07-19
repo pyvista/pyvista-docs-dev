@@ -1,0 +1,6 @@
+slice\_along\_line
+==================
+
+.. currentmodule:: pyvista
+
+.. automethod:: UnstructuredGridFilters.slice_along_line

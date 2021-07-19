@@ -1,0 +1,6 @@
+clip\_box
+=========
+
+.. currentmodule:: pyvista
+
+.. automethod:: UniformGridFilters.clip_box

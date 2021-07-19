@@ -1,0 +1,6 @@
+extract\_cells
+==============
+
+.. currentmodule:: pyvista
+
+.. automethod:: UniformGridFilters.extract_cells

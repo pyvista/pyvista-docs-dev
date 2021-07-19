@@ -1,0 +1,6 @@
+add\_box\_widget
+================
+
+.. currentmodule:: pyvista
+
+.. automethod:: Plotter.add_box_widget

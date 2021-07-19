@@ -1,0 +1,49 @@
+﻿pyvista.themes.\_AxesConfig
+===========================
+
+.. currentmodule:: pyvista.themes
+
+.. autoclass:: _AxesConfig
+
+   
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :toctree: _autosummary
+   
+      
+      
+      _AxesConfig.from_dict
+      
+      
+      _AxesConfig.to_dict
+      
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+      :toctree: _autosummary
+   
+      
+      _AxesConfig.box
+      
+      
+      _AxesConfig.show
+      
+      
+      _AxesConfig.x_color
+      
+      
+      _AxesConfig.y_color
+      
+      
+      _AxesConfig.z_color
+      
+   
+   

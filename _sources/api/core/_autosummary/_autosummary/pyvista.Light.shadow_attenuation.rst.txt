@@ -1,0 +1,6 @@
+shadow\_attenuation
+===================
+
+.. currentmodule:: pyvista
+
+.. autoproperty:: Light.shadow_attenuation

@@ -1,0 +1,6 @@
+﻿point\_array
+============
+
+.. currentmodule:: pyvista
+
+.. autofunction:: point_array

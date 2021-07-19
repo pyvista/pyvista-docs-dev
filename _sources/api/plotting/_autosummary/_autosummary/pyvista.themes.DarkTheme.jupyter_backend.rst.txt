@@ -1,0 +1,6 @@
+jupyter\_backend
+================
+
+.. currentmodule:: pyvista.themes
+
+.. autoproperty:: DarkTheme.jupyter_backend

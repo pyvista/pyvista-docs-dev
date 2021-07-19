@@ -1,0 +1,6 @@
+zoom
+====
+
+.. currentmodule:: pyvista
+
+.. automethod:: Camera.zoom

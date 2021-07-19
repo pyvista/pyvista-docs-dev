@@ -1,0 +1,6 @@
+add\_axes
+=========
+
+.. currentmodule:: pyvista
+
+.. automethod:: Plotter.add_axes

@@ -1,0 +1,6 @@
+﻿ParametricRandomHills
+=====================
+
+.. currentmodule:: pyvista
+
+.. autofunction:: ParametricRandomHills

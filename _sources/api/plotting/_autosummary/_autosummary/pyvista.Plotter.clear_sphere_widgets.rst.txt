@@ -1,0 +1,6 @@
+clear\_sphere\_widgets
+======================
+
+.. currentmodule:: pyvista
+
+.. automethod:: Plotter.clear_sphere_widgets

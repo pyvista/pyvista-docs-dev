@@ -1,0 +1,6 @@
+merge
+=====
+
+.. currentmodule:: pyvista
+
+.. automethod:: PolyDataFilters.merge

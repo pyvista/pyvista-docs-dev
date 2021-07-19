@@ -1,0 +1,6 @@
+attenuation\_values
+===================
+
+.. currentmodule:: pyvista
+
+.. autoproperty:: Light.attenuation_values

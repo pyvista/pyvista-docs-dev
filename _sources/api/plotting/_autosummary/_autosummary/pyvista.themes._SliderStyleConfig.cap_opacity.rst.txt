@@ -1,0 +1,6 @@
+cap\_opacity
+============
+
+.. currentmodule:: pyvista.themes
+
+.. autoproperty:: _SliderStyleConfig.cap_opacity

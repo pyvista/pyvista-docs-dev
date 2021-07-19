@@ -1,0 +1,6 @@
+﻿lines\_from\_points
+===================
+
+.. currentmodule:: pyvista
+
+.. autofunction:: lines_from_points

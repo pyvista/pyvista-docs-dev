@@ -1,0 +1,6 @@
+full\_screen
+============
+
+.. currentmodule:: pyvista.themes
+
+.. autoproperty:: DarkTheme.full_screen

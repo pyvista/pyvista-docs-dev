@@ -1,0 +1,6 @@
+extract\_all\_edges
+===================
+
+.. currentmodule:: pyvista
+
+.. automethod:: PolyDataFilters.extract_all_edges

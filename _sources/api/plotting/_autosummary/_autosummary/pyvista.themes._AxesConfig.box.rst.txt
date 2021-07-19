@@ -1,0 +1,6 @@
+box
+===
+
+.. currentmodule:: pyvista.themes
+
+.. autoproperty:: _AxesConfig.box

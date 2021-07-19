@@ -1,0 +1,6 @@
+add\_line\_widget
+=================
+
+.. currentmodule:: pyvista
+
+.. automethod:: WidgetHelper.add_line_widget

@@ -1,0 +1,6 @@
+enable\_geodesic\_picking
+=========================
+
+.. currentmodule:: pyvista
+
+.. automethod:: Plotter.enable_geodesic_picking

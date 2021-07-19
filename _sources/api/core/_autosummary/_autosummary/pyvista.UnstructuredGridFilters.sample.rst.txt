@@ -1,0 +1,6 @@
+sample
+======
+
+.. currentmodule:: pyvista
+
+.. automethod:: UnstructuredGridFilters.sample

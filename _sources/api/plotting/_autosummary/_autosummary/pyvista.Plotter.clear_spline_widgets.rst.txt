@@ -1,0 +1,6 @@
+clear\_spline\_widgets
+======================
+
+.. currentmodule:: pyvista
+
+.. automethod:: Plotter.clear_spline_widgets

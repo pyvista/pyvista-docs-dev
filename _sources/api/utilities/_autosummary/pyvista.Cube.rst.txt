@@ -1,0 +1,6 @@
+﻿Cube
+====
+
+.. currentmodule:: pyvista
+
+.. autofunction:: Cube

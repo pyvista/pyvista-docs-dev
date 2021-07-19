@@ -1,0 +1,6 @@
+update\_scalars
+===============
+
+.. currentmodule:: pyvista
+
+.. automethod:: Plotter.update_scalars

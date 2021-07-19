@@ -1,0 +1,6 @@
+opacity
+=======
+
+.. currentmodule:: pyvista.themes
+
+.. autoproperty:: _SilhouetteConfig.opacity

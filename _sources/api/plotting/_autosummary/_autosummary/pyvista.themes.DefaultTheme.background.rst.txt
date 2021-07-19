@@ -1,0 +1,6 @@
+background
+==========
+
+.. currentmodule:: pyvista.themes
+
+.. autoproperty:: DefaultTheme.background

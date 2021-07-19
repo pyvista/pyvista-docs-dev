@@ -1,0 +1,6 @@
+﻿Cylinder
+========
+
+.. currentmodule:: pyvista
+
+.. autofunction:: Cylinder

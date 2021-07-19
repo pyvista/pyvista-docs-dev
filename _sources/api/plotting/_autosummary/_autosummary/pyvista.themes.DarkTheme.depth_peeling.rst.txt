@@ -1,0 +1,6 @@
+depth\_peeling
+==============
+
+.. currentmodule:: pyvista.themes
+
+.. autoproperty:: DarkTheme.depth_peeling

@@ -1,0 +1,6 @@
+colorbar\_orientation
+=====================
+
+.. currentmodule:: pyvista.themes
+
+.. autoproperty:: DocumentTheme.colorbar_orientation

@@ -1,0 +1,6 @@
+add\_axes\_at\_origin
+=====================
+
+.. currentmodule:: pyvista
+
+.. automethod:: Plotter.add_axes_at_origin

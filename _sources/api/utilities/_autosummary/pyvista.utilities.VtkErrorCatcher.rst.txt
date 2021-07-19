@@ -1,0 +1,22 @@
+﻿pyvista.utilities.VtkErrorCatcher
+=================================
+
+.. currentmodule:: pyvista.utilities
+
+.. autoclass:: VtkErrorCatcher
+
+   
+   .. automethod:: __init__
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~VtkErrorCatcher.__init__
+   
+   
+
+   
+   
+   

@@ -1,0 +1,6 @@
+intersection
+============
+
+.. currentmodule:: pyvista
+
+.. automethod:: PolyDataFilters.intersection

@@ -1,0 +1,6 @@
+colorbar\_vertical
+==================
+
+.. currentmodule:: pyvista.themes
+
+.. autoproperty:: ParaViewTheme.colorbar_vertical

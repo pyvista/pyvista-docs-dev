@@ -1,0 +1,151 @@
+﻿pyvista.themes.DocumentTheme
+============================
+
+.. currentmodule:: pyvista.themes
+
+.. autoclass:: DocumentTheme
+
+   
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :toctree: _autosummary
+   
+      
+      
+      DocumentTheme.from_dict
+      
+      
+      DocumentTheme.load_theme
+      
+      
+      DocumentTheme.restore_defaults
+      
+      
+      DocumentTheme.save
+      
+      
+      DocumentTheme.to_dict
+      
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+      :toctree: _autosummary
+   
+      
+      DocumentTheme.auto_close
+      
+      
+      DocumentTheme.axes
+      
+      
+      DocumentTheme.background
+      
+      
+      DocumentTheme.camera
+      
+      
+      DocumentTheme.cmap
+      
+      
+      DocumentTheme.color
+      
+      
+      DocumentTheme.colorbar_horizontal
+      
+      
+      DocumentTheme.colorbar_orientation
+      
+      
+      DocumentTheme.colorbar_vertical
+      
+      
+      DocumentTheme.depth_peeling
+      
+      
+      DocumentTheme.edge_color
+      
+      
+      DocumentTheme.floor_color
+      
+      
+      DocumentTheme.font
+      
+      
+      DocumentTheme.full_screen
+      
+      
+      DocumentTheme.hidden_line_removal
+      
+      
+      DocumentTheme.interactive
+      
+      
+      DocumentTheme.jupyter_backend
+      
+      
+      DocumentTheme.lighting
+      
+      
+      DocumentTheme.multi_rendering_splitting_position
+      
+      
+      DocumentTheme.multi_samples
+      
+      
+      DocumentTheme.name
+      
+      
+      DocumentTheme.nan_color
+      
+      
+      DocumentTheme.notebook
+      
+      
+      DocumentTheme.outline_color
+      
+      
+      DocumentTheme.render_points_as_spheres
+      
+      
+      DocumentTheme.return_cpos
+      
+      
+      DocumentTheme.show_edges
+      
+      
+      DocumentTheme.show_scalar_bar
+      
+      
+      DocumentTheme.silhouette
+      
+      
+      DocumentTheme.slider_styles
+      
+      
+      DocumentTheme.smooth_shading
+      
+      
+      DocumentTheme.title
+      
+      
+      DocumentTheme.transparent_background
+      
+      
+      DocumentTheme.use_ipyvtk
+      
+      
+      DocumentTheme.volume_mapper
+      
+      
+      DocumentTheme.window_size
+      
+   
+   

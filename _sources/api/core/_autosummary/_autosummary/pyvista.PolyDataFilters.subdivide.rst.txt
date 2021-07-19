@@ -1,0 +1,6 @@
+subdivide
+=========
+
+.. currentmodule:: pyvista
+
+.. automethod:: PolyDataFilters.subdivide

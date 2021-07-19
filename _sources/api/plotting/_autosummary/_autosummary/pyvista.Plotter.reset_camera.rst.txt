@@ -1,0 +1,6 @@
+reset\_camera
+=============
+
+.. currentmodule:: pyvista
+
+.. automethod:: Plotter.reset_camera

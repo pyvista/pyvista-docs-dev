@@ -1,0 +1,6 @@
+render\_points\_as\_spheres
+===========================
+
+.. currentmodule:: pyvista.themes
+
+.. autoproperty:: DarkTheme.render_points_as_spheres

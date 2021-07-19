@@ -1,0 +1,6 @@
+﻿ParametricEllipsoid
+===================
+
+.. currentmodule:: pyvista
+
+.. autofunction:: ParametricEllipsoid

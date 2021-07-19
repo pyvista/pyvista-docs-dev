@@ -1,0 +1,6 @@
+view\_zx
+========
+
+.. currentmodule:: pyvista
+
+.. automethod:: Plotter.view_zx

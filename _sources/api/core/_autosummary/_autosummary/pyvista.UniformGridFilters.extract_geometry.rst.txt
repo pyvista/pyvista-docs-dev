@@ -1,0 +1,6 @@
+extract\_geometry
+=================
+
+.. currentmodule:: pyvista
+
+.. automethod:: UniformGridFilters.extract_geometry

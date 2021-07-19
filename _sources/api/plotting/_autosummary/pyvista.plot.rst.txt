@@ -1,0 +1,6 @@
+﻿plot
+====
+
+.. currentmodule:: pyvista
+
+.. autofunction:: plot

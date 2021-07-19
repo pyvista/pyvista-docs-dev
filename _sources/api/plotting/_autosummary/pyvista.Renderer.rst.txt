@@ -1,0 +1,486 @@
+﻿pyvista.Renderer
+================
+
+.. currentmodule:: pyvista
+
+.. autoclass:: Renderer
+
+   
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :toctree: _autosummary
+   
+      
+      
+      Renderer.add_actor
+      
+      
+      Renderer.add_axes
+      
+      
+      Renderer.add_axes_at_origin
+      
+      
+      Renderer.add_border
+      
+      
+      Renderer.add_bounding_box
+      
+      
+      Renderer.add_floor
+      
+      
+      Renderer.add_light
+      
+      
+      Renderer.add_orientation_widget
+      
+      
+      Renderer.clear
+      
+      
+      Renderer.close
+      
+      
+      Renderer.deep_clean
+      
+      
+      Renderer.disable
+      
+      
+      Renderer.disable_anti_aliasing
+      
+      
+      Renderer.disable_depth_peeling
+      
+      
+      Renderer.disable_eye_dome_lighting
+      
+      
+      Renderer.disable_hidden_line_removal
+      
+      
+      Renderer.disable_parallel_projection
+      
+      
+      Renderer.disable_shadows
+      
+      
+      Renderer.enable
+      
+      
+      Renderer.enable_anti_aliasing
+      
+      
+      Renderer.enable_depth_peeling
+      
+      
+      Renderer.enable_eye_dome_lighting
+      
+      
+      Renderer.enable_hidden_line_removal
+      
+      
+      Renderer.enable_parallel_projection
+      
+      
+      Renderer.enable_shadows
+      
+      
+      Renderer.get_default_cam_pos
+      
+      
+      Renderer.get_pick_position
+      
+      
+      Renderer.hide_axes
+      
+      
+      Renderer.isometric_view
+      
+      
+      Renderer.remove_actor
+      
+      
+      Renderer.remove_all_lights
+      
+      
+      Renderer.remove_bounding_box
+      
+      
+      Renderer.remove_bounds_axes
+      
+      
+      Renderer.remove_floors
+      
+      
+      Renderer.reset_camera
+      
+      
+      Renderer.reset_camera_clipping_range
+      
+      
+      Renderer.set_background
+      
+      
+      Renderer.set_environment_texture
+      
+      
+      Renderer.set_focus
+      
+      
+      Renderer.set_position
+      
+      
+      Renderer.set_scale
+      
+      
+      Renderer.set_viewup
+      
+      
+      Renderer.show_axes
+      
+      
+      Renderer.show_bounds
+      
+      
+      Renderer.show_grid
+      
+      
+      Renderer.update_bounds_axes
+      
+      
+      Renderer.view_isometric
+      
+      
+      Renderer.view_vector
+      
+      
+      Renderer.view_xy
+      
+      
+      Renderer.view_xz
+      
+      
+      Renderer.view_yx
+      
+      
+      Renderer.view_yz
+      
+      
+      Renderer.view_zx
+      
+      
+      Renderer.view_zy
+      
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+      :toctree: _autosummary
+   
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      Renderer.actors
+      
+      
+      Renderer.axes_enabled
+      
+      
+      Renderer.background_color
+      
+      
+      Renderer.bounds
+      
+      
+      Renderer.camera
+      
+      
+      Renderer.camera_position
+      
+      
+      Renderer.center
+      
+      
+      Renderer.length
+      
+      
+      Renderer.lights
+      
+      
+      Renderer.parallel_projection
+      
+      
+      Renderer.parallel_scale
+      
+   
+   

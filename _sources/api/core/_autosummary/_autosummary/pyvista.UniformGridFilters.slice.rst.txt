@@ -1,0 +1,6 @@
+slice
+=====
+
+.. currentmodule:: pyvista
+
+.. automethod:: UniformGridFilters.slice

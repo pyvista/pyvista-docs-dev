@@ -1,0 +1,6 @@
+extract\_points
+===============
+
+.. currentmodule:: pyvista
+
+.. automethod:: UniformGridFilters.extract_points

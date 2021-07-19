@@ -1,0 +1,6 @@
+camera\_position
+================
+
+.. currentmodule:: pyvista
+
+.. autoproperty:: Plotter.camera_position

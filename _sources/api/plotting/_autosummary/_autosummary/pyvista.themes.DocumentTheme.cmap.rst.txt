@@ -1,0 +1,6 @@
+cmap
+====
+
+.. currentmodule:: pyvista.themes
+
+.. autoproperty:: DocumentTheme.cmap

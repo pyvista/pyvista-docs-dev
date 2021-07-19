@@ -1,0 +1,6 @@
+position
+========
+
+.. currentmodule:: pyvista
+
+.. autoproperty:: Light.position

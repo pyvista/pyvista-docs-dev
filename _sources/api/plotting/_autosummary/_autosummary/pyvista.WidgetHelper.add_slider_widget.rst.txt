@@ -1,0 +1,6 @@
+add\_slider\_widget
+===================
+
+.. currentmodule:: pyvista
+
+.. automethod:: WidgetHelper.add_slider_widget

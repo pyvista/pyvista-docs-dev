@@ -1,0 +1,199 @@
+﻿pyvista.UnstructuredGridFilters
+===============================
+
+.. currentmodule:: pyvista
+
+.. autoclass:: UnstructuredGridFilters
+
+   
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :toctree: _autosummary
+   
+      
+      
+      UnstructuredGridFilters.cell_centers
+      
+      
+      UnstructuredGridFilters.cell_data_to_point_data
+      
+      
+      UnstructuredGridFilters.clip
+      
+      
+      UnstructuredGridFilters.clip_box
+      
+      
+      UnstructuredGridFilters.clip_scalar
+      
+      
+      UnstructuredGridFilters.clip_surface
+      
+      
+      UnstructuredGridFilters.compute_cell_quality
+      
+      
+      UnstructuredGridFilters.compute_cell_sizes
+      
+      
+      UnstructuredGridFilters.compute_derivative
+      
+      
+      UnstructuredGridFilters.compute_implicit_distance
+      
+      
+      UnstructuredGridFilters.connectivity
+      
+      
+      UnstructuredGridFilters.contour
+      
+      
+      UnstructuredGridFilters.ctp
+      
+      
+      UnstructuredGridFilters.decimate_boundary
+      
+      
+      UnstructuredGridFilters.delaunay_2d
+      
+      
+      UnstructuredGridFilters.delaunay_3d
+      
+      
+      UnstructuredGridFilters.elevation
+      
+      
+      UnstructuredGridFilters.extract_all_edges
+      
+      
+      UnstructuredGridFilters.extract_cells
+      
+      
+      UnstructuredGridFilters.extract_feature_edges
+      
+      
+      UnstructuredGridFilters.extract_geometry
+      
+      
+      UnstructuredGridFilters.extract_largest
+      
+      
+      UnstructuredGridFilters.extract_points
+      
+      
+      UnstructuredGridFilters.extract_surface
+      
+      
+      UnstructuredGridFilters.glyph
+      
+      
+      UnstructuredGridFilters.interpolate
+      
+      
+      UnstructuredGridFilters.merge
+      
+      
+      UnstructuredGridFilters.outline
+      
+      
+      UnstructuredGridFilters.outline_corners
+      
+      
+      UnstructuredGridFilters.plot_over_circular_arc
+      
+      
+      UnstructuredGridFilters.plot_over_circular_arc_normal
+      
+      
+      UnstructuredGridFilters.plot_over_line
+      
+      
+      UnstructuredGridFilters.point_data_to_cell_data
+      
+      
+      UnstructuredGridFilters.probe
+      
+      
+      UnstructuredGridFilters.ptc
+      
+      
+      UnstructuredGridFilters.reflect
+      
+      
+      UnstructuredGridFilters.sample
+      
+      
+      UnstructuredGridFilters.sample_over_circular_arc
+      
+      
+      UnstructuredGridFilters.sample_over_circular_arc_normal
+      
+      
+      UnstructuredGridFilters.sample_over_line
+      
+      
+      UnstructuredGridFilters.select_enclosed_points
+      
+      
+      UnstructuredGridFilters.shrink
+      
+      
+      UnstructuredGridFilters.slice
+      
+      
+      UnstructuredGridFilters.slice_along_axis
+      
+      
+      UnstructuredGridFilters.slice_along_line
+      
+      
+      UnstructuredGridFilters.slice_orthogonal
+      
+      
+      UnstructuredGridFilters.split_bodies
+      
+      
+      UnstructuredGridFilters.streamlines
+      
+      
+      UnstructuredGridFilters.streamlines_evenly_spaced_2D
+      
+      
+      UnstructuredGridFilters.streamlines_from_source
+      
+      
+      UnstructuredGridFilters.surface_indices
+      
+      
+      UnstructuredGridFilters.texture_map_to_plane
+      
+      
+      UnstructuredGridFilters.texture_map_to_sphere
+      
+      
+      UnstructuredGridFilters.threshold
+      
+      
+      UnstructuredGridFilters.threshold_percent
+      
+      
+      UnstructuredGridFilters.transform
+      
+      
+      UnstructuredGridFilters.triangulate
+      
+      
+      UnstructuredGridFilters.warp_by_scalar
+      
+      
+      UnstructuredGridFilters.warp_by_vector
+      
+   
+   
+
+   
+   
+   

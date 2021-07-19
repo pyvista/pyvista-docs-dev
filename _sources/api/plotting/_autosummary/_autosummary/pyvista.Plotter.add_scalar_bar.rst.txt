@@ -1,0 +1,6 @@
+add\_scalar\_bar
+================
+
+.. currentmodule:: pyvista
+
+.. automethod:: Plotter.add_scalar_bar

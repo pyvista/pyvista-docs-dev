@@ -1,0 +1,6 @@
+up
+==
+
+.. currentmodule:: pyvista
+
+.. autoproperty:: Camera.up

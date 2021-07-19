@@ -1,0 +1,1276 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Control Global and Local Plotting Themes &#8212; PyVista 0.31.dev0 documentation</title>
+    
+  <link href="../../_static/css/theme.css" rel="stylesheet" />
+  <link href="../../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
+
+    
+  <link rel="stylesheet"
+    href="../../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/basic.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/jupyter-sphinx.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/thebelab.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/gallery.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/gallery-binder.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/gallery-dataframe.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/gallery-rendered-html.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../../_static/js/index.1c5a1a01449ed65a7b51.js">
+
+    <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/clipboard.min.js"></script>
+    <script src="../../_static/copybutton.js"></script>
+    <script src="../../_static/thebelab-helper.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.20.0/dist/embed-amd.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Topographic Map" href="topo-map.html" />
+    <link rel="prev" title="Applying Textures" href="texture.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en" />
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+    <nav class="navbar navbar-light navbar-expand-lg bg-light fixed-top bd-navbar" id="navbar-main"><div class="container-xl">
+
+  <div id="navbar-start">
+    
+    
+
+<a class="navbar-brand" href="../../index.html">
+  <img src="../../_static/pyvista_logo_sm.png" class="logo" alt="logo">
+</a>
+
+
+    
+  </div>
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-collapsible" aria-controls="navbar-collapsible" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  
+  <div id="navbar-collapsible" class="col-lg-9 collapse navbar-collapse">
+    <div id="navbar-center" class="mr-auto">
+      
+      <div class="navbar-center-item">
+        <ul id="navbar-main-elements" class="navbar-nav">
+    <li class="toctree-l1 nav-item">
+ <a class="reference internal nav-link" href="../../getting-started/index.html">
+  Getting Started
+ </a>
+</li>
+
+<li class="toctree-l1 nav-item">
+ <a class="reference internal nav-link" href="../../user-guide/index.html">
+  User Guide
+ </a>
+</li>
+
+<li class="toctree-l1 current active nav-item">
+ <a class="reference internal nav-link" href="../index.html">
+  Examples
+ </a>
+</li>
+
+<li class="toctree-l1 nav-item">
+ <a class="reference internal nav-link" href="../../api/index.html">
+  API Reference
+ </a>
+</li>
+
+<li class="toctree-l1 nav-item">
+ <a class="reference internal nav-link" href="../../extras/index.html">
+  Extras
+ </a>
+</li>
+
+    
+</ul>
+      </div>
+      
+    </div>
+
+    <div id="navbar-end">
+      
+      <div class="navbar-end-item">
+        <ul id="navbar-icon-links" class="navbar-nav" aria-label="Icon Links">
+        <li class="nav-item">
+          <a class="nav-link" href="https://github.com/pyvista/pyvista" rel="noopener" target="_blank" title="GitHub">
+            <span><i class="fab fa-github-square"></i></span>
+            <label class="sr-only">GitHub</label>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="http://slack.pyvista.org" rel="noopener" target="_blank" title="Slack Community">
+            <span><i class="fab fa-slack"></i></span>
+            <label class="sr-only">Slack Community</label>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://github.com/pyvista/pyvista/discussions" rel="noopener" target="_blank" title="Support">
+            <span><i class="fa fa-comment fa-fw"></i></span>
+            <label class="sr-only">Support</label>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://github.com/pyvista/pyvista/blob/main/CONTRIBUTING.md" rel="noopener" target="_blank" title="Contributing">
+            <span><i class="fa fa-gavel fa-fw"></i></span>
+            <label class="sr-only">Contributing</label>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://doi.org/10.21105/joss.01450" rel="noopener" target="_blank" title="The Paper">
+            <span><i class="fa fa-file-text fa-fw"></i></span>
+            <label class="sr-only">The Paper</label>
+          </a>
+        </li>
+      </ul>
+      </div>
+      
+    </div>
+  </div>
+</div>
+    </nav>
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+            
+            <!-- Only show if we have sidebars configured, else just a small margin  -->
+            <div class="col-12 col-md-3 bd-sidebar"><form class="bd-search d-flex align-items-center" action="../../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search the docs ..." aria-label="Search the docs ..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+  <div class="bd-toc-item active">
+    <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../00-load/create-explicit-structured-grid.html">
+   Creating an Explicit Structured Grid
+  </a>
+ </li>
+</ul>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../00-load/create-geometric-objects.html">
+   Geometric Objects
+  </a>
+ </li>
+</ul>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../00-load/create-parametric-geometric-objects.html">
+   Parametric Geometric Objects
+  </a>
+ </li>
+</ul>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../00-load/create-point-cloud.html">
+   Create Point Cloud
+  </a>
+ </li>
+</ul>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../00-load/create-poly.html">
+   Create PolyData
+  </a>
+ </li>
+</ul>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../00-load/create-spline.html">
+   Creating a Spline
+  </a>
+ </li>
+</ul>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../00-load/create-structured-surface.html">
+   Creating a Structured Surface
+  </a>
+ </li>
+</ul>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../00-load/create-surface-draped.html">
+   Drape 2D Surface From Line
+  </a>
+ </li>
+</ul>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../00-load/create-tri-surface.html">
+   Create Triangulated Surface
+  </a>
+ </li>
+</ul>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../00-load/create-uniform-grid.html">
+   Creating a Uniform Grid
+  </a>
+ </li>
+</ul>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../00-load/create-unstructured-surface.html">
+   Creating an Unstructured Grid
+  </a>
+ </li>
+</ul>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../00-load/load-gltf.html">
+   Working with a glTF Files
+  </a>
+ </li>
+</ul>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../00-load/read-dolfin.html">
+   Read FEniCS/Dolfin Meshes
+  </a>
+ </li>
+</ul>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../00-load/read-file.html">
+   Load and Plot from a File
+  </a>
+ </li>
+</ul>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../00-load/read-image.html">
+   Read Image Files
+  </a>
+ </li>
+</ul>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../00-load/read-parallel.html">
+   Parallel Files
+  </a>
+ </li>
+</ul>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../00-load/terrain-mesh.html">
+   Terrain Following Mesh
+  </a>
+ </li>
+</ul>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../00-load/wrap-trimesh.html">
+   Wrapping Other Objects
+  </a>
+ </li>
+</ul>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../01-filter/boolean-operations.html">
+   Boolean Operations
+  </a>
+ </li>
+</ul>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../01-filter/cell-centers.html">
+   Extract Cell Centers
+  </a>
+ </li>
+</ul>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../01-filter/clipping-with-surface.html">
+   Clipping with a Surface
+  </a>
+ </li>
+</ul>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../01-filter/clipping.html">
+   Clipping with Planes &amp; Boxes
+  </a>
+ </li>
+</ul>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../01-filter/compute-normals.html">
+   Computing Surface Normals
+  </a>
+ </li>
+</ul>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../01-filter/compute-volume.html">
+   Volumetric Analysis
+  </a>
+ </li>
+</ul>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../01-filter/connectivity.html">
+   Connectivity
+  </a>
+ </li>
+</ul>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../01-filter/contouring.html">
+   Contouring
+  </a>
+ </li>
+</ul>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../01-filter/decimate.html">
+   Decimation
+  </a>
+ </li>
+</ul>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../01-filter/distance-between-surfaces.html">
+   Distance Between Two Surfaces
+  </a>
+ </li>
+</ul>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../01-filter/extract-cells-inside-surface.html">
+   Extract Cells Inside Surface
+  </a>
+ </li>
+</ul>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../01-filter/extract-edges.html">
+   Extract Edges
+  </a>
+ </li>
+</ul>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../01-filter/extract-surface.html">
+   Extract Surface
+  </a>
+ </li>
+</ul>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../01-filter/extrude-rotate.html">
+   Extrude Rotation
+  </a>
+ </li>
+</ul>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../01-filter/gaussian-smoothing.html">
+   Gaussian Smoothing
+  </a>
+ </li>
+</ul>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../01-filter/geodesic.html">
+   Geodesic Paths
+  </a>
+ </li>
+</ul>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../01-filter/glyphs.html">
+   Plotting Glyphs (Vectors or PolyData)
+  </a>
+ </li>
+</ul>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../01-filter/glyphs_table.html">
+   Table of Glyphs
+  </a>
+ </li>
+</ul>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../01-filter/gradients.html">
+   Compute Gradients of a Field
+  </a>
+ </li>
+</ul>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../01-filter/interpolate.html">
+   Interpolating
+  </a>
+ </li>
+</ul>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../01-filter/mesh-quality.html">
+   Computing Mesh Quality
+  </a>
+ </li>
+</ul>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../01-filter/poly-ray-trace.html">
+   Ray Tracing
+  </a>
+ </li>
+</ul>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../01-filter/project-plane.html">
+   Project to a Plane
+  </a>
+ </li>
+</ul>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../01-filter/reflect.html">
+   Reflect Meshes
+  </a>
+ </li>
+</ul>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../01-filter/resample.html">
+   Resampling
+  </a>
+ </li>
+</ul>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../01-filter/rotate.html">
+   Rotations
+  </a>
+ </li>
+</ul>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../01-filter/sampling_functions_2d.html">
+   Sample Function: Perlin Noise in 2D
+  </a>
+ </li>
+</ul>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../01-filter/sampling_functions_3d.html">
+   Sample Function: Perlin Noise in 3D
+  </a>
+ </li>
+</ul>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../01-filter/slicing.html">
+   Slicing
+  </a>
+ </li>
+</ul>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../01-filter/streamlines.html">
+   Streamlines
+  </a>
+ </li>
+</ul>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../01-filter/streamlines_2D.html">
+   2D Streamlines
+  </a>
+ </li>
+</ul>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../01-filter/subdivide.html">
+   Subdivide Cells
+  </a>
+ </li>
+</ul>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../01-filter/surface-smoothing.html">
+   Surface Smoothing
+  </a>
+ </li>
+</ul>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../01-filter/using-filters.html">
+   Using Common Filters
+  </a>
+ </li>
+</ul>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../01-filter/voxelize.html">
+   Voxelize a Surface Mesh
+  </a>
+ </li>
+</ul>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../01-filter/warp-by-vector.html">
+   Warping by Vectors
+  </a>
+ </li>
+</ul>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="background_image.html">
+   Background Image
+  </a>
+ </li>
+</ul>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="clear.html">
+   Clearing a Mesh or the Entire Plot
+  </a>
+ </li>
+</ul>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="cmap.html">
+   Colormap Choices
+  </a>
+ </li>
+</ul>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="depth-peeling.html">
+   Depth Peeling
+  </a>
+ </li>
+</ul>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="edges.html">
+   Show Edges
+  </a>
+ </li>
+</ul>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="edl.html">
+   Eye Dome Lighting
+  </a>
+ </li>
+</ul>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="floors.html">
+   Plot with Floors
+  </a>
+ </li>
+</ul>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="ghost-cells.html">
+   Hide Cells with Ghosting
+  </a>
+ </li>
+</ul>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="gif.html">
+   Create a GIF Movie
+  </a>
+ </li>
+</ul>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="image_depth.html">
+   Render a depth image
+  </a>
+ </li>
+</ul>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="interpolate-before-map.html">
+   Interpolate Before Mapping
+  </a>
+ </li>
+</ul>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="isovalue.html">
+   Moving Isovalue
+  </a>
+ </li>
+</ul>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="labels.html">
+   Label Points
+  </a>
+ </li>
+</ul>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="lighting_mesh.html">
+   Lighting Properties
+  </a>
+ </li>
+</ul>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="linked.html">
+   Linked Views in Subplots
+  </a>
+ </li>
+</ul>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="movie.html">
+   Create a MP4 Movie
+  </a>
+ </li>
+</ul>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="multi-window.html">
+   Multi-Window Plot
+  </a>
+ </li>
+</ul>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="opacity.html">
+   Plot with Opacity
+  </a>
+ </li>
+</ul>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="orbit.html">
+   Orbiting
+  </a>
+ </li>
+</ul>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="ortho-slices.html">
+   Orthogonal Slices
+  </a>
+ </li>
+</ul>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="pbr.html">
+   Physically Based Rendering
+  </a>
+ </li>
+</ul>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="plot-over-circular-arc.html">
+   Plot Scalars Over a Circular Arc
+  </a>
+ </li>
+</ul>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="plot-over-line.html">
+   Plot Over Line
+  </a>
+ </li>
+</ul>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="scalar-bars.html">
+   Customize Scalar Bars
+  </a>
+ </li>
+</ul>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="screenshot.html">
+   Saving Screenshots
+  </a>
+ </li>
+</ul>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="shading.html">
+   Types of Shading
+  </a>
+ </li>
+</ul>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="silhouette.html">
+   Silhouette Highlight
+  </a>
+ </li>
+</ul>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="spherical.html">
+   Plot data in spherical coordinates
+  </a>
+ </li>
+</ul>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="texture.html">
+   Applying Textures
+  </a>
+ </li>
+</ul>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Control Global and Local Plotting Themes
+  </a>
+ </li>
+</ul>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="topo-map.html">
+   Topographic Map
+  </a>
+ </li>
+</ul>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="vector-component.html">
+   Plot Vector Component
+  </a>
+ </li>
+</ul>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="volume.html">
+   Volume Rendering
+  </a>
+ </li>
+</ul>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../03-widgets/box-widget.html">
+   Box Widget
+  </a>
+ </li>
+</ul>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../03-widgets/checkbox-widget.html">
+   Checkbox Widget
+  </a>
+ </li>
+</ul>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../03-widgets/line-widget.html">
+   Line Widget
+  </a>
+ </li>
+</ul>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../03-widgets/multi-slider-widget.html">
+   Multiple Slider Widgets
+  </a>
+ </li>
+</ul>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../03-widgets/plane-widget.html">
+   Plane Widget
+  </a>
+ </li>
+</ul>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../03-widgets/slider-bar-widget.html">
+   Slider Bar Widget
+  </a>
+ </li>
+</ul>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../03-widgets/sphere-widget.html">
+   Sphere Widget
+  </a>
+ </li>
+</ul>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../03-widgets/spline-widget.html">
+   Spline Widget
+  </a>
+ </li>
+</ul>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../04-lights/actors.html">
+   Light Actors
+  </a>
+ </li>
+</ul>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../04-lights/attenuation.html">
+   Attenuation
+  </a>
+ </li>
+</ul>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../04-lights/beam_shape.html">
+   Beam Shape
+  </a>
+ </li>
+</ul>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../04-lights/light_types.html">
+   Light Types
+  </a>
+ </li>
+</ul>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../04-lights/mesh_lighting.html">
+   Disabling Mesh Lighting
+  </a>
+ </li>
+</ul>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../04-lights/plotter_builtins.html">
+   Plotter Lighting Systems
+  </a>
+ </li>
+</ul>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../04-lights/shadows.html">
+   Shadows
+  </a>
+ </li>
+</ul>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../99-advanced/antarctica-compare.html">
+   Compare Field Across Mesh Regions
+  </a>
+ </li>
+</ul>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../99-advanced/ray-trace-moeller.html">
+   Visualize the Moeller–Trumbore Algorithm
+  </a>
+ </li>
+</ul>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../99-advanced/ray-trace.html">
+   Ray Tracing
+  </a>
+ </li>
+</ul>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../99-advanced/warp-by-vector-eigenmodes.html">
+   Displaying eigenmodes of vibration using
+   <code class="docutils literal notranslate">
+    <span class="pre">
+     warp_by_vector
+    </span>
+   </code>
+  </a>
+ </li>
+</ul>
+
+  </div>
+</nav>
+            </div>
+            
+          
+
+          
+          <div class="d-none d-xl-block col-xl-2 bd-toc">
+            
+              
+              <div class="toc-item">
+                
+<div class="tocsection onthispage pt-5 pb-3">
+    <i class="fas fa-list"></i> On this page
+</div>
+
+<nav id="bd-toc-nav">
+    <ul class="visible nav section-nav flex-column">
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#">
+   Control Global and Local Plotting Themes
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#modifying-the-global-theme">
+   Modifying the Global Theme
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#creating-a-custom-theme-and-applying-it-globally">
+   Creating a Custom Theme and Applying it Globally
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#creating-a-custom-theme-and-applying-it-to-a-single-plotter">
+   Creating a Custom Theme and Applying it to a Single Plotter
+  </a>
+ </li>
+</ul>
+
+</nav>
+              </div>
+              
+              <div class="toc-item">
+                
+              </div>
+              
+            
+          </div>
+          
+
+          
+          
+            
+          
+          <main class="col-12 col-md-9 col-xl-7 py-md-5 pl-md-5 pr-md-4 bd-content" role="main">
+              
+              <div>
+                
+  <div class="sphx-glr-download-link-note admonition note">
+<p class="admonition-title">Note</p>
+<p>Click <a class="reference internal" href="#sphx-glr-download-examples-02-plot-themes-py"><span class="std std-ref">here</span></a>
+to download the full example code</p>
+</div>
+<div class="sphx-glr-example-title section" id="control-global-and-local-plotting-themes">
+<span id="sphx-glr-examples-02-plot-themes-py"></span><h1>Control Global and Local Plotting Themes<a class="headerlink" href="#control-global-and-local-plotting-themes" title="Permalink to this headline">¶</a></h1>
+<p>PyVista allows you to set global and local plotting themes to easily
+set default plotting parameters.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pyvista</span> <span class="k">as</span> <span class="nn">pv</span>
+<span class="kn">from</span> <span class="nn">pyvista</span> <span class="kn">import</span> <span class="n">examples</span>
+</pre></div>
+</div>
+<p>Define a simple plotting routine for comparing the themes.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">mesh</span> <span class="o">=</span> <span class="n">examples</span><span class="o">.</span><span class="n">download_st_helens</span><span class="p">()</span><span class="o">.</span><span class="n">warp_by_scalar</span><span class="p">()</span>
+
+
+<span class="k">def</span> <span class="nf">plot_example</span><span class="p">():</span>
+    <span class="n">p</span> <span class="o">=</span> <span class="n">pv</span><span class="o">.</span><span class="n">Plotter</span><span class="p">()</span>
+    <span class="n">p</span><span class="o">.</span><span class="n">add_mesh</span><span class="p">(</span><span class="n">mesh</span><span class="p">)</span>
+    <span class="n">p</span><span class="o">.</span><span class="n">add_bounding_box</span><span class="p">()</span>
+    <span class="n">p</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>PyVista’s default color theme is chosen to be generally easy on your
+eyes and is best used when working long hours on your visualization
+project.  The grey background and warm colormaps are chosen to make
+sure 3D renderings do not drastically change the brightness of your
+screen when working in dark environments.</p>
+<p>Here’s an example of our default plotting theme - this is what you
+would see by default after running any of our examples locally.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">pv</span><span class="o">.</span><span class="n">set_plot_theme</span><span class="p">(</span><span class="s1">&#39;default&#39;</span><span class="p">)</span>
+<span class="n">plot_example</span><span class="p">()</span>
+</pre></div>
+</div>
+<img alt="themes" class="sphx-glr-single-img" src="../../_images/sphx_glr_themes_001.png" />
+<p>PyVista also ships with a few plotting themes:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">'ParaView'</span></code>: this is designed to mimic ParaView’s default plotting theme.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">'dark'</span></code>: this is designed to be night-mode friendly with dark backgrounds and color schemes.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">'document'</span></code>: this is built for use in document style plotting and making publication quality figures.</p></li>
+</ul>
+<p>Demo the <code class="docutils literal notranslate"><span class="pre">'ParaView'</span></code> theme.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">pv</span><span class="o">.</span><span class="n">set_plot_theme</span><span class="p">(</span><span class="s2">&quot;paraview&quot;</span><span class="p">)</span>
+
+<span class="n">plot_example</span><span class="p">()</span>
+</pre></div>
+</div>
+<img alt="themes" class="sphx-glr-single-img" src="../../_images/sphx_glr_themes_002.png" />
+<p>Demo the <code class="docutils literal notranslate"><span class="pre">'dark'</span></code> theme.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">pv</span><span class="o">.</span><span class="n">set_plot_theme</span><span class="p">(</span><span class="s2">&quot;dark&quot;</span><span class="p">)</span>
+
+<span class="n">plot_example</span><span class="p">()</span>
+</pre></div>
+</div>
+<img alt="themes" class="sphx-glr-single-img" src="../../_images/sphx_glr_themes_003.png" />
+<p>Demo the <code class="docutils literal notranslate"><span class="pre">'document'</span></code> theme.  This theme is used on our online examples.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">pv</span><span class="o">.</span><span class="n">set_plot_theme</span><span class="p">(</span><span class="s2">&quot;document&quot;</span><span class="p">)</span>
+
+<span class="n">plot_example</span><span class="p">()</span>
+</pre></div>
+</div>
+<img alt="themes" class="sphx-glr-single-img" src="../../_images/sphx_glr_themes_004.png" />
+<p>Note that you can also use color gradients for the background of the plotting
+window!</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">plotter</span> <span class="o">=</span> <span class="n">pv</span><span class="o">.</span><span class="n">Plotter</span><span class="p">()</span>
+<span class="n">plotter</span><span class="o">.</span><span class="n">add_mesh</span><span class="p">(</span><span class="n">mesh</span><span class="p">)</span>
+<span class="n">plotter</span><span class="o">.</span><span class="n">show_grid</span><span class="p">()</span>
+<span class="c1"># Here we set the gradient</span>
+<span class="n">plotter</span><span class="o">.</span><span class="n">set_background</span><span class="p">(</span><span class="s2">&quot;royalblue&quot;</span><span class="p">,</span> <span class="n">top</span><span class="o">=</span><span class="s2">&quot;aliceblue&quot;</span><span class="p">)</span>
+<span class="n">cpos</span> <span class="o">=</span> <span class="n">plotter</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+<img alt="themes" class="sphx-glr-single-img" src="../../_images/sphx_glr_themes_005.png" />
+</div>
+<div class="section" id="modifying-the-global-theme">
+<h1>Modifying the Global Theme<a class="headerlink" href="#modifying-the-global-theme" title="Permalink to this headline">¶</a></h1>
+<p>You can control how meshes are displayed by setting individual
+parameters when plotting like <code class="docutils literal notranslate"><span class="pre">mesh.plot(show_edges=True)</span></code>, or by
+setting a global theme.  You can also control individual parameters
+how all meshes are displayed by default via <code class="docutils literal notranslate"><span class="pre">pyvista.global_theme</span></code>.</p>
+<p>Here, we print out the current global defaults for all <code class="docutils literal notranslate"><span class="pre">pyvista</span></code>
+meshes.  These values have been changed by the previous “Document”
+theme.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">pv</span><span class="o">.</span><span class="n">global_theme</span>
+</pre></div>
+</div>
+<p class="sphx-glr-script-out">Out:</p>
+<div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>Document Theme
+--------------
+Background               : (1.0, 1.0, 1.0)
+Jupyter backend          : ipyvtklink
+Full screen              : False
+Window size              : [1024, 768]
+Camera                   : {&#39;position&#39;: [1, 1, 1], &#39;viewup&#39;: [0, 0, 1]}
+Notebook                 : None
+Font                     :
+    Family               : arial
+    Size                 : 18
+    Title size           : 18
+    Label size           : 18
+    Color                : (0.0, 0.0, 0.0)
+    Float format         : None
+Auto close               : True
+Colormap                 : viridis
+Color                    : (0.8235294117647058, 0.7058823529411765, 0.5490196078431373)
+NaN color                : (0.6627450980392157, 0.6627450980392157, 0.6627450980392157)
+Edge color               : (0.0, 0.0, 0.0)
+Outline color            : (0.0, 0.0, 0.0)
+Floor color              : (0.5019607843137255, 0.5019607843137255, 0.5019607843137255)
+Colorbar orientation     : horizontal
+Colorbar - horizontal    :
+    Width                : 0.6
+    Height               : 0.08
+    X Position           : 0.35
+    Y Position           : 0.05
+Colorbar - vertical      :
+    Width                : 0.08
+    Height               : 0.45
+    X Position           : 0.9
+    Y Position           : 0.02
+Show scalar bar          : True
+Show edges               : False
+Lighting                 : True
+Interactive              : False
+Render points as spheres : False
+Transparent Background   : False
+Title                    : PyVista
+Axes                     : Axes configuration
+    X Color              : (1.0, 0.38823529411764707, 0.2784313725490196)
+    Y Color              : (0.1803921568627451, 0.5450980392156862, 0.3411764705882353)
+    Z Color              : (0.0, 0.0, 1.0)
+    Use Box              : False
+    Show                 : True
+Multi-samples            : 4
+Multi-renderer Split Pos : None
+Volume mapper            : smart
+Smooth shading           : False
+Depth peeling            :
+    Number               : 4
+    Occlusion ratio      : 0.0
+    Enabled              : False
+Silhouette               :
+    Color                : (0.0, 0.0, 0.0)
+    Line width           : 2
+    Opacity              : 1.0
+    Feature angle        : None
+    Decimate             : 0.9
+Slider Styles            :
+    Classic              :
+        Slider length    : 0.02
+        Slider width     : 0.04
+        Slider color     : (0.5, 0.5, 0.5)
+        Tube width       : 0.005
+        Tube color       : (1, 1, 1)
+        Cap opacity      : 1.0
+        Cap length       : 0.01
+        Cap width        : 0.02
+    Modern               :
+        Slider length    : 0.02
+        Slider width     : 0.04
+        Slider color     : (0.43137255, 0.44313725, 0.45882353)
+        Tube width       : 0.04
+        Tube color       : (0.69803922, 0.70196078, 0.70980392)
+        Cap opacity      : 0.0
+        Cap length       : 0.01
+        Cap width        : 0.02
+</pre></div>
+</div>
+<p>By default, edges are not shown on meshes unless explicitly
+specified when plotting a mesh via <code class="docutils literal notranslate"><span class="pre">show_edges=True</span></code>.  You can
+change this default behavior globally by changing the default
+parameter.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">pv</span><span class="o">.</span><span class="n">global_theme</span><span class="o">.</span><span class="n">show_edges</span> <span class="o">=</span> <span class="kc">True</span>
+<span class="n">cpos</span> <span class="o">=</span> <span class="n">pv</span><span class="o">.</span><span class="n">Sphere</span><span class="p">()</span><span class="o">.</span><span class="n">plot</span><span class="p">()</span>
+</pre></div>
+</div>
+<img alt="themes" class="sphx-glr-single-img" src="../../_images/sphx_glr_themes_006.png" />
+<p>You can reset pyvista to default behavior with <code class="docutils literal notranslate"><span class="pre">restore_defaults</span></code>.
+Note that the figure’s color was reset to the default “white” color
+rather than the “tan” color default with the document theme.  Under
+the hood, each theme applied changes the global plot defaults stored
+within <code class="docutils literal notranslate"><span class="pre">pyvista.global_theme.</span></code></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">pv</span><span class="o">.</span><span class="n">global_theme</span><span class="o">.</span><span class="n">restore_defaults</span><span class="p">()</span>
+<span class="n">cpos</span> <span class="o">=</span> <span class="n">pv</span><span class="o">.</span><span class="n">Sphere</span><span class="p">()</span><span class="o">.</span><span class="n">plot</span><span class="p">()</span>
+</pre></div>
+</div>
+<img alt="themes" class="sphx-glr-single-img" src="../../_images/sphx_glr_themes_007.png" />
+</div>
+<div class="section" id="creating-a-custom-theme-and-applying-it-globally">
+<h1>Creating a Custom Theme and Applying it Globally<a class="headerlink" href="#creating-a-custom-theme-and-applying-it-globally" title="Permalink to this headline">¶</a></h1>
+<p>You can create a custom theme by modifying one of the existing
+themes and then loading it into the global plotting defaults.</p>
+<p>Here, we create a dark theme that plots meshes red by default while
+showing edges.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">pyvista</span> <span class="kn">import</span> <span class="n">themes</span>
+
+<span class="n">my_theme</span> <span class="o">=</span> <span class="n">themes</span><span class="o">.</span><span class="n">DarkTheme</span><span class="p">()</span>
+<span class="n">my_theme</span><span class="o">.</span><span class="n">color</span> <span class="o">=</span> <span class="s1">&#39;red&#39;</span>
+<span class="n">my_theme</span><span class="o">.</span><span class="n">lighting</span> <span class="o">=</span> <span class="kc">False</span>
+<span class="n">my_theme</span><span class="o">.</span><span class="n">show_edges</span> <span class="o">=</span> <span class="kc">True</span>
+<span class="n">my_theme</span><span class="o">.</span><span class="n">axes</span><span class="o">.</span><span class="n">box</span> <span class="o">=</span> <span class="kc">True</span>
+
+<span class="n">pv</span><span class="o">.</span><span class="n">global_theme</span><span class="o">.</span><span class="n">load_theme</span><span class="p">(</span><span class="n">my_theme</span><span class="p">)</span>
+<span class="n">cpos</span> <span class="o">=</span> <span class="n">pv</span><span class="o">.</span><span class="n">Sphere</span><span class="p">()</span><span class="o">.</span><span class="n">plot</span><span class="p">()</span>
+</pre></div>
+</div>
+<img alt="themes" class="sphx-glr-single-img" src="../../_images/sphx_glr_themes_008.png" />
+</div>
+<div class="section" id="creating-a-custom-theme-and-applying-it-to-a-single-plotter">
+<h1>Creating a Custom Theme and Applying it to a Single Plotter<a class="headerlink" href="#creating-a-custom-theme-and-applying-it-to-a-single-plotter" title="Permalink to this headline">¶</a></h1>
+<p>In this example, we create a custom theme from the base “default”
+theme and then apply it to a single plotter.  Note that this does
+not change the behavior of the global “defaults”, which are still
+set to the modified <code class="docutils literal notranslate"><span class="pre">DarkTheme</span></code>.</p>
+<p>This approach carries the advantage that you can maintain several
+themes and apply them to one or more plotters.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">pyvista</span> <span class="kn">import</span> <span class="n">themes</span>
+
+<span class="n">my_theme</span> <span class="o">=</span> <span class="n">themes</span><span class="o">.</span><span class="n">DefaultTheme</span><span class="p">()</span>
+<span class="n">my_theme</span><span class="o">.</span><span class="n">color</span> <span class="o">=</span> <span class="s1">&#39;black&#39;</span>
+<span class="n">my_theme</span><span class="o">.</span><span class="n">lighting</span> <span class="o">=</span> <span class="kc">True</span>
+<span class="n">my_theme</span><span class="o">.</span><span class="n">show_edges</span> <span class="o">=</span> <span class="kc">True</span>
+<span class="n">my_theme</span><span class="o">.</span><span class="n">edge_color</span> <span class="o">=</span> <span class="s1">&#39;white&#39;</span>
+<span class="n">my_theme</span><span class="o">.</span><span class="n">background</span> <span class="o">=</span> <span class="s1">&#39;white&#39;</span>
+
+<span class="n">cpos</span> <span class="o">=</span> <span class="n">pv</span><span class="o">.</span><span class="n">Sphere</span><span class="p">()</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">theme</span><span class="o">=</span><span class="n">my_theme</span><span class="p">)</span>
+</pre></div>
+</div>
+<img alt="themes" class="sphx-glr-single-img" src="../../_images/sphx_glr_themes_009.png" />
+<p>Alternatively, set the theme of an instance of <code class="docutils literal notranslate"><span class="pre">Plotter</span></code>.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">pl</span> <span class="o">=</span> <span class="n">pv</span><span class="o">.</span><span class="n">Plotter</span><span class="p">(</span><span class="n">theme</span><span class="o">=</span><span class="n">my_theme</span><span class="p">)</span>
+<span class="c1"># pl.theme = my_theme  # alternatively use the setter</span>
+<span class="n">pl</span><span class="o">.</span><span class="n">add_mesh</span><span class="p">(</span><span class="n">pv</span><span class="o">.</span><span class="n">Cube</span><span class="p">())</span>
+<span class="n">cpos</span> <span class="o">=</span> <span class="n">pl</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+<img alt="themes" class="sphx-glr-single-img" src="../../_images/sphx_glr_themes_010.png" />
+<p>Reset to use the document theme</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">pv</span><span class="o">.</span><span class="n">set_plot_theme</span><span class="p">(</span><span class="s2">&quot;document&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p class="sphx-glr-timing"><strong>Total running time of the script:</strong> ( 0 minutes  6.094 seconds)</p>
+<div class="sphx-glr-footer class sphx-glr-footer-example docutils container" id="sphx-glr-download-examples-02-plot-themes-py">
+<div class="sphx-glr-download sphx-glr-download-python docutils container">
+<p><a class="reference download internal" download="" href="../../_downloads/9818cced84c263fa13e623b67beb9ef3/themes.py"><code class="xref download docutils literal notranslate"><span class="pre">Download</span> <span class="pre">Python</span> <span class="pre">source</span> <span class="pre">code:</span> <span class="pre">themes.py</span></code></a></p>
+</div>
+<div class="sphx-glr-download sphx-glr-download-jupyter docutils container">
+<p><a class="reference download internal" download="" href="../../_downloads/3ba6564359d3223231765cb4c38c3d97/themes.ipynb"><code class="xref download docutils literal notranslate"><span class="pre">Download</span> <span class="pre">Jupyter</span> <span class="pre">notebook:</span> <span class="pre">themes.ipynb</span></code></a></p>
+</div>
+</div>
+<p class="sphx-glr-signature"><a class="reference external" href="https://sphinx-gallery.github.io">Gallery generated by Sphinx-Gallery</a></p>
+</div>
+
+
+              </div>
+              
+              
+          </main>
+          
+
+      </div>
+    </div>
+  
+  <script src="../../_static/js/index.1c5a1a01449ed65a7b51.js"></script>
+
+  
+<script async="" src="https://www.google-analytics.com/analytics.js"></script>
+<script>
+                        window.ga = window.ga || function () {
+                            (ga.q = ga.q || []).push(arguments) };
+                        ga.l = +new Date;
+                        ga('create', 'UA-140243896-1', 'auto');
+                        ga('set', 'anonymizeIp', true);
+                        ga('send', 'pageview');
+                    </script>
+<footer class="footer mt-5 mt-md-0">
+  <div class="container">
+    
+    <div class="footer-item">
+      <p class="copyright">
+    &copy; Copyright 2017-2021, The PyVista Developers.<br/>
+</p>
+    </div>
+    
+    <div class="footer-item">
+      <p class="sphinx-version">
+Created using <a href="http://sphinx-doc.org/">Sphinx</a> 4.1.1.<br/>
+</p>
+    </div>
+    
+  </div>
+</footer>
+  </body>
+</html>

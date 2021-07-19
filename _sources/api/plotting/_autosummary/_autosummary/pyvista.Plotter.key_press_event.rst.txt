@@ -1,0 +1,6 @@
+key\_press\_event
+=================
+
+.. currentmodule:: pyvista
+
+.. automethod:: Plotter.key_press_event

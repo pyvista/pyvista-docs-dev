@@ -1,0 +1,73 @@
+﻿pyvista.CompositeFilters
+========================
+
+.. currentmodule:: pyvista
+
+.. autoclass:: CompositeFilters
+
+   
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :toctree: _autosummary
+   
+      
+      
+      CompositeFilters.cell_centers
+      
+      
+      CompositeFilters.cell_data_to_point_data
+      
+      
+      CompositeFilters.clip
+      
+      
+      CompositeFilters.clip_box
+      
+      
+      CompositeFilters.combine
+      
+      
+      CompositeFilters.compute_cell_sizes
+      
+      
+      CompositeFilters.elevation
+      
+      
+      CompositeFilters.extract_all_edges
+      
+      
+      CompositeFilters.extract_geometry
+      
+      
+      CompositeFilters.outline
+      
+      
+      CompositeFilters.outline_corners
+      
+      
+      CompositeFilters.point_data_to_cell_data
+      
+      
+      CompositeFilters.slice
+      
+      
+      CompositeFilters.slice_along_axis
+      
+      
+      CompositeFilters.slice_along_line
+      
+      
+      CompositeFilters.slice_orthogonal
+      
+      
+      CompositeFilters.triangulate
+      
+   
+   
+
+   
+   
+   

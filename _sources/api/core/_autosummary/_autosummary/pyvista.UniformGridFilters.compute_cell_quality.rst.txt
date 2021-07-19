@@ -1,0 +1,6 @@
+compute\_cell\_quality
+======================
+
+.. currentmodule:: pyvista
+
+.. automethod:: UniformGridFilters.compute_cell_quality

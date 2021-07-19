@@ -1,0 +1,6 @@
+fly\_to\_mouse\_position
+========================
+
+.. currentmodule:: pyvista
+
+.. automethod:: Plotter.fly_to_mouse_position

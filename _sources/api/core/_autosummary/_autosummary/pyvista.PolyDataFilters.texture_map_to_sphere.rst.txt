@@ -1,0 +1,6 @@
+texture\_map\_to\_sphere
+========================
+
+.. currentmodule:: pyvista
+
+.. automethod:: PolyDataFilters.texture_map_to_sphere

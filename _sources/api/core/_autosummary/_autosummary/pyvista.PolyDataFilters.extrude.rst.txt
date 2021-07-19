@@ -1,0 +1,6 @@
+extrude
+=======
+
+.. currentmodule:: pyvista
+
+.. automethod:: PolyDataFilters.extrude

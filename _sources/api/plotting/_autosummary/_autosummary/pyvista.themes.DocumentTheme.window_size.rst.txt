@@ -1,0 +1,6 @@
+window\_size
+============
+
+.. currentmodule:: pyvista.themes
+
+.. autoproperty:: DocumentTheme.window_size

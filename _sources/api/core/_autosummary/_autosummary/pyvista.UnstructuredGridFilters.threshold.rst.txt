@@ -1,0 +1,6 @@
+threshold
+=========
+
+.. currentmodule:: pyvista
+
+.. automethod:: UnstructuredGridFilters.threshold

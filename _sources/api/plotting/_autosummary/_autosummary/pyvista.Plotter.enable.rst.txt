@@ -1,0 +1,6 @@
+enable
+======
+
+.. currentmodule:: pyvista
+
+.. automethod:: Plotter.enable

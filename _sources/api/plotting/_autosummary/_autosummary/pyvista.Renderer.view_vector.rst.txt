@@ -1,0 +1,6 @@
+view\_vector
+============
+
+.. currentmodule:: pyvista
+
+.. automethod:: Renderer.view_vector

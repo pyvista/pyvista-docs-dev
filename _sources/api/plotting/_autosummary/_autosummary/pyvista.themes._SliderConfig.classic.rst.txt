@@ -1,0 +1,6 @@
+classic
+=======
+
+.. currentmodule:: pyvista.themes
+
+.. autoproperty:: _SliderConfig.classic

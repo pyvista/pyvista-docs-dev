@@ -1,0 +1,6 @@
+remove\_all\_lights
+===================
+
+.. currentmodule:: pyvista
+
+.. automethod:: Plotter.remove_all_lights

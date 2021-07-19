@@ -1,0 +1,6 @@
+add\_mesh\_slice\_spline
+========================
+
+.. currentmodule:: pyvista
+
+.. automethod:: Plotter.add_mesh_slice_spline

@@ -1,0 +1,6 @@
+﻿read\_exodus
+============
+
+.. currentmodule:: pyvista
+
+.. autofunction:: read_exodus

@@ -1,0 +1,6 @@
+nan\_color
+==========
+
+.. currentmodule:: pyvista.themes
+
+.. autoproperty:: ParaViewTheme.nan_color

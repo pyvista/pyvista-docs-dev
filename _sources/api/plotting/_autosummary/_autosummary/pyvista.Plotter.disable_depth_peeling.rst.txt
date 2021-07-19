@@ -1,0 +1,6 @@
+disable\_depth\_peeling
+=======================
+
+.. currentmodule:: pyvista
+
+.. automethod:: Plotter.disable_depth_peeling

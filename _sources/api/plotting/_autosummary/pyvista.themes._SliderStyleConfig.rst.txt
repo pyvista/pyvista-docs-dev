@@ -1,0 +1,61 @@
+﻿pyvista.themes.\_SliderStyleConfig
+==================================
+
+.. currentmodule:: pyvista.themes
+
+.. autoclass:: _SliderStyleConfig
+
+   
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :toctree: _autosummary
+   
+      
+      
+      _SliderStyleConfig.from_dict
+      
+      
+      _SliderStyleConfig.to_dict
+      
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+      :toctree: _autosummary
+   
+      
+      _SliderStyleConfig.cap_length
+      
+      
+      _SliderStyleConfig.cap_opacity
+      
+      
+      _SliderStyleConfig.cap_width
+      
+      
+      _SliderStyleConfig.name
+      
+      
+      _SliderStyleConfig.slider_color
+      
+      
+      _SliderStyleConfig.slider_length
+      
+      
+      _SliderStyleConfig.slider_width
+      
+      
+      _SliderStyleConfig.tube_color
+      
+      
+      _SliderStyleConfig.tube_width
+      
+   
+   

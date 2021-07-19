@@ -1,0 +1,6 @@
+export\_vtkjs
+=============
+
+.. currentmodule:: pyvista
+
+.. automethod:: Plotter.export_vtkjs

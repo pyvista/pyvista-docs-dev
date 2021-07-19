@@ -1,0 +1,6 @@
+remove\_scalar\_bar
+===================
+
+.. currentmodule:: pyvista
+
+.. automethod:: Plotter.remove_scalar_bar

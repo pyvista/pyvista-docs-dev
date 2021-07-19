@@ -1,0 +1,6 @@
+add\_volume
+===========
+
+.. currentmodule:: pyvista
+
+.. automethod:: Plotter.add_volume

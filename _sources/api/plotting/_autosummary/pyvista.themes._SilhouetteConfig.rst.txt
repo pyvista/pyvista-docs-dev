@@ -1,0 +1,49 @@
+﻿pyvista.themes.\_SilhouetteConfig
+=================================
+
+.. currentmodule:: pyvista.themes
+
+.. autoclass:: _SilhouetteConfig
+
+   
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :toctree: _autosummary
+   
+      
+      
+      _SilhouetteConfig.from_dict
+      
+      
+      _SilhouetteConfig.to_dict
+      
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+      :toctree: _autosummary
+   
+      
+      _SilhouetteConfig.color
+      
+      
+      _SilhouetteConfig.decimate
+      
+      
+      _SilhouetteConfig.feature_angle
+      
+      
+      _SilhouetteConfig.line_width
+      
+      
+      _SilhouetteConfig.opacity
+      
+   
+   

@@ -1,0 +1,6 @@
+enable\_anti\_aliasing
+======================
+
+.. currentmodule:: pyvista
+
+.. automethod:: Renderer.enable_anti_aliasing

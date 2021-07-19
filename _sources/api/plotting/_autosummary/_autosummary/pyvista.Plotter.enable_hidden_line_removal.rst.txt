@@ -1,0 +1,6 @@
+enable\_hidden\_line\_removal
+=============================
+
+.. currentmodule:: pyvista
+
+.. automethod:: Plotter.enable_hidden_line_removal

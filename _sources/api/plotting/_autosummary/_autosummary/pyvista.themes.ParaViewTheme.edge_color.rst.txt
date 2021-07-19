@@ -1,0 +1,6 @@
+edge\_color
+===========
+
+.. currentmodule:: pyvista.themes
+
+.. autoproperty:: ParaViewTheme.edge_color

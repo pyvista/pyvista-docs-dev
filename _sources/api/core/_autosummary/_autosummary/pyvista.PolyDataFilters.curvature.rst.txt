@@ -1,0 +1,6 @@
+curvature
+=========
+
+.. currentmodule:: pyvista
+
+.. automethod:: PolyDataFilters.curvature

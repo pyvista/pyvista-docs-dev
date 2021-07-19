@@ -1,0 +1,151 @@
+﻿pyvista.themes.ParaViewTheme
+============================
+
+.. currentmodule:: pyvista.themes
+
+.. autoclass:: ParaViewTheme
+
+   
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :toctree: _autosummary
+   
+      
+      
+      ParaViewTheme.from_dict
+      
+      
+      ParaViewTheme.load_theme
+      
+      
+      ParaViewTheme.restore_defaults
+      
+      
+      ParaViewTheme.save
+      
+      
+      ParaViewTheme.to_dict
+      
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+      :toctree: _autosummary
+   
+      
+      ParaViewTheme.auto_close
+      
+      
+      ParaViewTheme.axes
+      
+      
+      ParaViewTheme.background
+      
+      
+      ParaViewTheme.camera
+      
+      
+      ParaViewTheme.cmap
+      
+      
+      ParaViewTheme.color
+      
+      
+      ParaViewTheme.colorbar_horizontal
+      
+      
+      ParaViewTheme.colorbar_orientation
+      
+      
+      ParaViewTheme.colorbar_vertical
+      
+      
+      ParaViewTheme.depth_peeling
+      
+      
+      ParaViewTheme.edge_color
+      
+      
+      ParaViewTheme.floor_color
+      
+      
+      ParaViewTheme.font
+      
+      
+      ParaViewTheme.full_screen
+      
+      
+      ParaViewTheme.hidden_line_removal
+      
+      
+      ParaViewTheme.interactive
+      
+      
+      ParaViewTheme.jupyter_backend
+      
+      
+      ParaViewTheme.lighting
+      
+      
+      ParaViewTheme.multi_rendering_splitting_position
+      
+      
+      ParaViewTheme.multi_samples
+      
+      
+      ParaViewTheme.name
+      
+      
+      ParaViewTheme.nan_color
+      
+      
+      ParaViewTheme.notebook
+      
+      
+      ParaViewTheme.outline_color
+      
+      
+      ParaViewTheme.render_points_as_spheres
+      
+      
+      ParaViewTheme.return_cpos
+      
+      
+      ParaViewTheme.show_edges
+      
+      
+      ParaViewTheme.show_scalar_bar
+      
+      
+      ParaViewTheme.silhouette
+      
+      
+      ParaViewTheme.slider_styles
+      
+      
+      ParaViewTheme.smooth_shading
+      
+      
+      ParaViewTheme.title
+      
+      
+      ParaViewTheme.transparent_background
+      
+      
+      ParaViewTheme.use_ipyvtk
+      
+      
+      ParaViewTheme.volume_mapper
+      
+      
+      ParaViewTheme.window_size
+      
+   
+   

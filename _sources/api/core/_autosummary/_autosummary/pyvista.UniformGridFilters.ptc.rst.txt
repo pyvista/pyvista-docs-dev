@@ -1,0 +1,6 @@
+ptc
+===
+
+.. currentmodule:: pyvista
+
+.. automethod:: UniformGridFilters.ptc

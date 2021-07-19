@@ -1,0 +1,202 @@
+﻿pyvista.UniformGridFilters
+==========================
+
+.. currentmodule:: pyvista
+
+.. autoclass:: UniformGridFilters
+
+   
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      :toctree: _autosummary
+   
+      
+      
+      UniformGridFilters.cell_centers
+      
+      
+      UniformGridFilters.cell_data_to_point_data
+      
+      
+      UniformGridFilters.clip
+      
+      
+      UniformGridFilters.clip_box
+      
+      
+      UniformGridFilters.clip_scalar
+      
+      
+      UniformGridFilters.clip_surface
+      
+      
+      UniformGridFilters.compute_cell_quality
+      
+      
+      UniformGridFilters.compute_cell_sizes
+      
+      
+      UniformGridFilters.compute_derivative
+      
+      
+      UniformGridFilters.compute_implicit_distance
+      
+      
+      UniformGridFilters.connectivity
+      
+      
+      UniformGridFilters.contour
+      
+      
+      UniformGridFilters.ctp
+      
+      
+      UniformGridFilters.decimate_boundary
+      
+      
+      UniformGridFilters.delaunay_3d
+      
+      
+      UniformGridFilters.elevation
+      
+      
+      UniformGridFilters.extract_all_edges
+      
+      
+      UniformGridFilters.extract_cells
+      
+      
+      UniformGridFilters.extract_feature_edges
+      
+      
+      UniformGridFilters.extract_geometry
+      
+      
+      UniformGridFilters.extract_largest
+      
+      
+      UniformGridFilters.extract_points
+      
+      
+      UniformGridFilters.extract_subset
+      
+      
+      UniformGridFilters.extract_surface
+      
+      
+      UniformGridFilters.gaussian_smooth
+      
+      
+      UniformGridFilters.glyph
+      
+      
+      UniformGridFilters.interpolate
+      
+      
+      UniformGridFilters.merge
+      
+      
+      UniformGridFilters.outline
+      
+      
+      UniformGridFilters.outline_corners
+      
+      
+      UniformGridFilters.plot_over_circular_arc
+      
+      
+      UniformGridFilters.plot_over_circular_arc_normal
+      
+      
+      UniformGridFilters.plot_over_line
+      
+      
+      UniformGridFilters.point_data_to_cell_data
+      
+      
+      UniformGridFilters.probe
+      
+      
+      UniformGridFilters.ptc
+      
+      
+      UniformGridFilters.reflect
+      
+      
+      UniformGridFilters.sample
+      
+      
+      UniformGridFilters.sample_over_circular_arc
+      
+      
+      UniformGridFilters.sample_over_circular_arc_normal
+      
+      
+      UniformGridFilters.sample_over_line
+      
+      
+      UniformGridFilters.select_enclosed_points
+      
+      
+      UniformGridFilters.shrink
+      
+      
+      UniformGridFilters.slice
+      
+      
+      UniformGridFilters.slice_along_axis
+      
+      
+      UniformGridFilters.slice_along_line
+      
+      
+      UniformGridFilters.slice_orthogonal
+      
+      
+      UniformGridFilters.split_bodies
+      
+      
+      UniformGridFilters.streamlines
+      
+      
+      UniformGridFilters.streamlines_evenly_spaced_2D
+      
+      
+      UniformGridFilters.streamlines_from_source
+      
+      
+      UniformGridFilters.surface_indices
+      
+      
+      UniformGridFilters.texture_map_to_plane
+      
+      
+      UniformGridFilters.texture_map_to_sphere
+      
+      
+      UniformGridFilters.threshold
+      
+      
+      UniformGridFilters.threshold_percent
+      
+      
+      UniformGridFilters.transform
+      
+      
+      UniformGridFilters.triangulate
+      
+      
+      UniformGridFilters.warp_by_scalar
+      
+      
+      UniformGridFilters.warp_by_vector
+      
+   
+   
+
+   
+   
+   
